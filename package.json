@@ -1,13 +1,26 @@
 {
-  "name": "tests",
+  "name": "lavalink-status",
   "version": "1.0.0",
-  "description": "",
+  "description": "lavalink live status in your discord server",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+   "scripts": {
+    "start": "node index.js"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brblacky/lavalink-status.git"
   },
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "lavalink",
+    "erela",
+    "music",
+    "bot",
+    "discord",
+    "musicbot"
+  ],
+  "author": "blacky",
+  "license ": "MIT",
+  "bugs": "https://github.com/brblacky/lavalink-status/issues",
+  "homepage": "https://github.com/brblacky/lavalink-status#readme",
   "dependencies": {
     "discord.js": "^12.5.3",
     "erela.js": "^2.3.3",
