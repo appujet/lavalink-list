@@ -7,7 +7,7 @@ const client = new Client({
         GatewayIntentBits.GuildMessages,
         GatewayIntentBits.GuildPresences,
         GatewayIntentBits.GuildVoiceStates,
-
+        GatewayIntentBits.MessageContent,
     ],
     partials: [Partials.Channel, Partials.Message, Partials.User, Partials.GuildMember, Partials.Reaction]
 });
@@ -18,8 +18,10 @@ client.manager = new Manager({
         if (guild) guild.shard.send(payload);
     },
 }).on("nodeConnect", node => console.log(`Node "${node.options.identifier}" connected.`));
-
+//client.rest.on('rateLimited', (info) => console.log(info));
 client.on("ready", async () => {
+    client.manager.init(client.user.id);
+    console.log(`${client.user.username} online!`);
 
     const channel = await client.channels.fetch(logs);
     const embed = new EmbedBuilder()
@@ -64,10 +66,17 @@ client.on("ready", async () => {
             msg.edit({ embeds: [rembed] });
         }, 2000);
     })
-
-    client.manager.init(client.user.id);
-    console.log(`${client.user.username} online!`);
-
 })
 client.login(token);
 
+process.on('unhandledRejection', (reason, p) => {
+    console.log(reason, p);
+});
+
+process.on('uncaughtException', (err, origin) => {
+    console.log(err, origin);
+});
+
+process.on('uncaughtExceptionMonitor', (err, origin) => {
+    console.log(err, origin);
+});
