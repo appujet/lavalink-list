@@ -25,6 +25,10 @@
   "dependencies": {
     "discord.js": "^14.0.3",
     "dotenv": "^16.0.1",
-    "erela.js": "^2.3.3"
+    "erela.js": "^2.3.3",
+    "moment": "^2.29.4",
+    "moment-duration-format": "^2.3.2",
+    "prettysize": "^2.0.0",
+    "systeminformation": "^5.12.1"
   }
 }
