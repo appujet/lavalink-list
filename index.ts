@@ -1,47 +1,68 @@
-const { Client, EmbedBuilder } = require("discord.js");
-const { logs } = require("../config.js");
-const si = require('systeminformation');
-const os = require("node:os");
-const pretty = require('prettysize');
-const moment = require("moment");
-require("moment-duration-format");
-/**
- * 
- * @param {Client} client 
- */
-module.exports = async (client) => {
-    client.manager.init(client.user.id);
-    console.log(`${client.user.username} online!`);
-
-    const channel = await client.channels.fetch(logs);
+import { Client, WebhookClient, Partials, TextChannel } from "discord.js";
+import { Vulkava } from "vulkava";
+import si from "systeminformation";
+import os from "os";
+import config from "./config";
+import moment from "moment";
+import pretty from "prettysize";
+import "moment-duration-format";
+import { fetch } from "undici";
 
 
-    let cl = await si.currentLoad();
-    const embed = new EmbedBuilder()
-        .setColor("#2F3136")
-        .setDescription("Please wait for a minute!\nStatus is being ready!")
-    channel.bulkDelete(10);
-    channel.send({ embeds: [embed] }).then((msg) => {
+const client = new Client({
+    intents: [
+        "Guilds",
+        "GuildMessages",
+        "GuildMessageReactions",
+        "GuildMessageTyping",
+        "GuildVoiceStates",
+    ]
+})
+
+async function main() {
+    await client.login(config.token);
+
+    const hook = new WebhookClient({ url: config.webhook });
+    const vulkava = new Vulkava({
+        nodes: config.nodes,
+        sendWS: (id, payload) => {
+            client.guilds.cache.get(id)?.shard.send(payload)
+        }
+    });
+   
+    client.on('ready', async () => {
+        console.log("Bot is ready!");
+        vulkava.start(client.user.id);
+        let cl = await si.currentLoad();
         setInterval(async () => {
-
             let netdata = await si.networkStats();
             let memdata = await si.mem();
             let diskdata = await si.fsSize();
             let osdata = await si.osInfo();
             let cpudata = await si.cpu();
-            let uptime = await os.uptime();
+            let uptime = os.uptime();
+            const res = await fetch('https://api.waifu.pics/sfw/neko');
+            const json = await res.json() as any;
 
-            const rembed = new EmbedBuilder()
-                .setDescription(`__**Server Information**__`)
-                .addFields([
+            let hookImage = json.url;
+            let embed = {
+                title: "Server Stats",
+                color: 0x2F3136,
+                timestamp: new Date().toISOString(),
+                thumbnail: {
+                    url: hookImage
+                },
+                fields: [
                     {
-                        name: "**Lavalink**", value: `\`\`\`nim\n${client.manager.nodes.map((node) =>
-                            `Node : ${node.connected ? "🟢" : "🔴"} ${node.options.identifier}
+                        name: "**Lavalink**", value: `\`\`\`nim\n${vulkava.nodes.map((node) =>
+                            `Node : ${node.connect ? "🟢" : "🔴"} ${node.options.id}
 Memory Usage : ${formatBytes(node.stats.memory.allocated)} - ${node.stats.cpu.lavalinkLoad.toFixed(2)}%
 Connections : ${node.stats.playingPlayers} / ${node.stats.players}
+System Load : ${node.stats.cpu.systemLoad.toFixed(2)}%
+Cpu cores : ${node.stats.cpu.cores}
 Uptime : ${moment(node.stats.uptime).format(
                                 "D[ days], H[ hours], M[ minutes], S[ seconds]"
-                            )}`)}\`\`\``, inline: true
+                            )}`).join('\n\n')}\`\`\``, inline: true
                     },
 
                     { name: "**CPU**", value: `\`\`\`nim\nCpu: ${cpudata.manufacturer + " " + cpudata.brand}\nLoad: ${cl.currentLoad.toFixed(2)}%\nCores: ${cpudata.cores}\nPlatform: ${osdata.platform}\`\`\``, inline: true },
@@ -50,18 +71,37 @@ Uptime : ${moment(node.stats.uptime).format(
                     { name: "**NETWORK**", value: `\`\`\`nim\nPing: ${Math.round(netdata[0].ms)}ms\nUp: ${pretty(netdata[0].tx_sec)}/s\nDown: ${pretty(netdata[0].rx_sec)}/s\n\nTotal Up: ${pretty(netdata[0].tx_bytes)}\nTotal Down: ${pretty(netdata[0].rx_bytes)}\`\`\`` },
                     { name: "**Discord API websocket ping**", value: `\`\`\`nim\n${Math.round(client.ws.ping)}ms\`\`\``, inline: true },
                     { name: "**Uptime**", value: `\`\`\`nim\n${uptimer(uptime)}\`\`\``, inline: true }
-                ])
-                .setColor("#2F3136")
-                .setFooter({ text: `Update at ` })
-                .setTimestamp(Date.now());
-            msg.edit({ embeds: [rembed] });
+                ]
+            } as any;
 
-        }, 5000);
+            if (hook) {
+                await hook.editMessage(config.msgId, {
+                    embeds: [embed as any],
+                    content: null,
+                })
+            }
+        }, 10000);
     })
 
 }
+console.log("Starting...");
+main();
+console.log("Started!");
+process.on('unhandledRejection', (reason, p) => {
+    console.log(reason, p);
+});
 
-function uptimer(seconds) {
+process.on('uncaughtException', (err, origin) => {
+    console.log(err, origin);
+});
+
+process.on('uncaughtExceptionMonitor', (err, origin) => {
+    console.log(err, origin);
+});
+
+
+
+function uptimer(seconds: number) {
     seconds = seconds || 0;
     seconds = Number(seconds);
     seconds = Math.abs(seconds);
@@ -70,7 +110,7 @@ function uptimer(seconds) {
     var h = Math.floor(seconds % (3600 * 24) / 3600);
     var m = Math.floor(seconds % 3600 / 60);
     var s = Math.floor(seconds % 60);
-    var parts = new Array();
+    let parts: any = new Array();
 
     if (d > 0) {
         var dDisplay = d > 0 ? d + ' ' + (d == 1 ? "day" : "days") : "";
@@ -94,10 +134,11 @@ function uptimer(seconds) {
 
     return parts.join(', ', parts);
 }
-function formatBytes(bytes) {
+function formatBytes(bytes: number) {
     if (bytes === 0) return "0 B";
     const sizes = ["B", "KB", "MB", "GB", "TB"];
     return `${(
         bytes / Math.pow(1024, Math.floor(Math.log(bytes) / Math.log(1024)))
     ).toFixed(2)} ${sizes[Math.floor(Math.log(bytes) / Math.log(1024))]}`;
 }
+
