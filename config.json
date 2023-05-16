@@ -1,0 +1,11 @@
+{
+    "token": "",
+    "nodes": {
+        "id": "",
+        "hostname": "",
+        "port": "",
+        "secure": false,
+        "password": ""
+    },
+    "channelId": ""
+}

@@ -1,8 +1,8 @@
-import { Client, WebhookClient, Partials, TextChannel } from "discord.js";
-import { Vulkava } from "vulkava";
+import { Client, TextChannel } from "discord.js";
+import { Vulkava , NodeOptions} from "vulkava";
 import si from "systeminformation";
 import os from "os";
-import config from "./config";
+import config from "./config.json";
 import moment from "moment";
 import pretty from "prettysize";
 import "moment-duration-format";
@@ -22,9 +22,9 @@ const client = new Client({
 async function main() {
     await client.login(config.token);
 
-    const hook = new WebhookClient({ url: config.webhook });
+    const channel = config.channelId ? await client.channels.fetch(config.channelId) as TextChannel : null;
     const vulkava = new Vulkava({
-        nodes: config.nodes,
+        nodes: config.nodes as unknown as NodeOptions[],
         sendWS: (id, payload) => {
             client.guilds.cache.get(id)?.shard.send(payload)
         }
@@ -33,6 +33,9 @@ async function main() {
     client.on('ready', async () => {
         console.log("Bot is ready!");
         vulkava.start(client.user.id);
+        await channel.bulkDelete(100).catch(() => { });
+
+       const msg = await channel.send({ embeds: [{ title: "Bot is ready!\nplease wait for 10 seconds to get the stats", color: 0x2F3136 }] });
         let cl = await si.currentLoad();
         setInterval(async () => {
             let netdata = await si.networkStats();
@@ -73,20 +76,16 @@ Uptime : ${moment(node.stats.uptime).format(
                     { name: "**Uptime**", value: `\`\`\`nim\n${uptimer(uptime)}\`\`\``, inline: true }
                 ]
             } as any;
-
-            if (hook) {
-                await hook.editMessage(config.msgId, {
-                    embeds: [embed as any],
-                    content: null,
-                })
+            if (msg) {
+               await msg.edit({ embeds: [embed] });
             }
         }, 10000);
     })
 
 }
 console.log("Starting...");
-main();
-console.log("Started!");
+main().catch(console.error);
+
 process.on('unhandledRejection', (reason, p) => {
     console.log(reason, p);
 });
