@@ -1,0 +1,58 @@
+[
+  {
+    "identifier": "Horizxon - SG",
+    "host": "lava.horizxon.tech",
+    "port": 80,
+    "password": "horizxon.tech",
+    "secure": false,
+    "authorId": "410380919212605440"
+  },
+  {
+    "identifier": "Horizxon-1 (EU)",
+    "host": "lava1.horizxon.tech",
+    "port": 443,
+    "password": "horizxon.tech",
+    "secure": true,
+    "authorId": "410380919212605440"
+  },
+  {
+    "identifier": "Horizxon-2 (US)",
+    "host": "lava2.horizxon.tech",
+    "port": 443,
+    "password": "horizxon.tech",
+    "secure": true,
+    "authorId": "410380919212605440"
+  },
+  {
+    "identifier": "Horizxon-3 (CA)",
+    "host": "lava3.horizxon.tech",
+    "port": 443,
+    "password": "horizxon.tech",
+    "secure": true,
+    "authorId": "410380919212605440"
+  },
+  {
+    "identifier": "towdawg",
+    "host": "74.201.216.46",
+    "port": 4026,
+    "password": "reedrousisgayy",
+    "secure": false,
+    "authorId": "135132310260416512"
+  },
+  {
+    "identifier": "aadi.png",
+    "host": "54.38.198.24",
+    "port": 88,
+    "password": "stonemusicgay",
+    "secure": false,
+    "authorId": "238477261781598219"
+  },
+  {
+    "identifier": "Gino Node",
+    "host": "krn.2d.gay",
+    "port": 80,
+    "password": "AWP)JQ$Gv9}dm.u",
+    "secure": false,
+    "authorId": "314219277546946561"
+  }
+]
