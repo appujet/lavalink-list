@@ -57,14 +57,6 @@
   },
   {
     "identifier": "Caliwyr",
-    "host": "54.38.198.23",
-    "port": 88,
-    "password": "stonemusicgay",
-    "secure": false,
-    "authorId": ""
-  },
-  {
-    "identifier": "Caliwyr",
     "host": "lavalink.oryzen.xyz",
     "port": 2248,
     "password": "discord.gg/6xpF6YqVDd",
