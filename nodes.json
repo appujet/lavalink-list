@@ -310,5 +310,13 @@
     "password": "lewdhutao",
     "secure": false,
     "authorId": ""
+  },
+  {
+    "identifier": "Clxud",
+    "host": "lavalink.clxud.dev",
+    "port": 2333,
+    "password": "youshallnotpass",
+    "secure": false,
+    "authorId": "313314995687391234"
   }
 ]
