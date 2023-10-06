@@ -62,5 +62,13 @@
     "password": "meowicelava",
     "secure": false,
     "authorId": "666824403216105483"
+  },
+    {
+    "identifier": "SyGsys (TH)",
+    "host": "210.246.215.110",
+    "port": 5269,
+    "password": "sygsys-lavalink_v3",
+    "secure": false,
+    "authorId": "1031168461184978975"
   }
 ]
