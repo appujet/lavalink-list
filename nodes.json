@@ -62,5 +62,13 @@
     "password": "meowicelava",
     "secure": false,
     "authorId": "666824403216105483"
+  },
+  {
+    "identifier": "nhutlam",
+    "host": "78.46.39.20",
+    "port": 8055,
+    "password": "nhutlam",
+    "secure": false,
+    "authorId": "851436717855866891"
   }
 ]
