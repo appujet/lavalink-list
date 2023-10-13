@@ -62,5 +62,13 @@
     "password": "meowicelava",
     "secure": false,
     "authorId": "666824403216105483"
+  },
+  {
+    "identifier": "Moonu (US)",
+    "host": "104.168.24.225",
+    "port": 2333,
+    "password": "moon81238!",
+    "secure": false,
+    "authorId": "497768011118280716"
   }
 ]
