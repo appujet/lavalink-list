@@ -1,5 +1,13 @@
 [
   {
+    "identifier": "Musi Lavalink",
+    "host": "193.31.31.111",
+    "port": 25227,
+    "password": "MusiWithME",
+    "secure": false,
+    "authorId": "883214512398925884"
+  },
+  {
     "identifier": "Horizxon - SG",
     "host": "lava.horizxon.tech",
     "port": 80,
