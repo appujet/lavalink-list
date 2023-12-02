@@ -70,5 +70,37 @@
     "password": "moon81238!",
     "secure": false,
     "authorId": "497768011118280716"
+  },
+  {
+    "identifier": "Made by TRAGIC",
+    "host": "51.161.130.134",
+    "port": 10449,
+    "password": "madebytragic",
+    "secure": false,
+    "authorId": "742457036914294855"
+  },
+  {
+    "identifier": "Made by TRAGIC",
+    "host": "51.161.130.134",
+    "port": 10308,
+    "password": "madebytragic",
+    "secure": false,
+    "authorId": "742457036914294855"
+  },
+  {
+    "identifier": "Made by TRAGIC",
+    "host": "51.161.130.134",
+    "port": 10402,
+    "password": "madebytragic",
+    "secure": false,
+    "authorId": "742457036914294855"
+  },
+  {
+    "identifier": "Made by TRAGIC",
+    "host": "51.161.130.134",
+    "port": 10326,
+    "password": "madebytragic",
+    "secure": false,
+    "authorId": "742457036914294855"
   }
 ]
