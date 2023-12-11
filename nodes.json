@@ -1,11 +1,11 @@
 [
   {
-    "identifier": "INZEWORLD-NODE (RU)",	     
-    "host": "85.88.163.80",
-    "port": 3128,
-    "password": "saher.inzeworld.com",
+    "identifier": "Horizxon - SG",
+    "host": "lava.horizxon.tech",
+    "port": 80,
+    "password": "horizxon.tech",
     "secure": false,
-    "authorId": "454863447344021515"
+    "authorId": "410380919212605440"
   },
   {
     "identifier": "Horizxon-1 (EU)",
@@ -102,5 +102,12 @@
     "password": "madebytragic",
     "secure": false,
     "authorId": "742457036914294855"
-  }
+  },
+  {
+    "identifier": "INZEWORLD-NODE (RU)",
+    "host": "85.88.163.80",
+    "port": 3128,
+    "password": "saher.inzeworld.com",
+    "authorId": "454863447344021515"
+   }
 ]
