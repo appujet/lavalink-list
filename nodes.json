@@ -109,5 +109,29 @@
     "port": 3128,
     "password": "saher.inzeworld.com",
     "authorId": "454863447344021515"
+   },
+  {
+    "identifier": "PixelMine Node 1 | Germany",
+    "host": "1-de-lavalink.pixelmine.games",
+    "port": 26095,
+    "password": "pixelmine.games",
+    "secure": false,
+    "authorId": "930653904830607380"
+   }
+  {
+    "identifier": "PixelMine Node 2 | Poland",
+    "host": "2-pl-lavalink.pixelmine.games",
+    "port": 25722,
+    "password": "pixelmine.games",
+    "secure": false,
+    "authorId": "930653904830607380"
+   }
+  {
+    "identifier": "PixelMine Node 3 | Canada",
+    "host": "3-ca-lavalink.pixelmine.games",
+    "port": 26288,
+    "password": "pixelmine.games",
+    "secure": false,
+    "authorId": "930653904830607380"
    }
 ]
