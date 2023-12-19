@@ -1,5 +1,29 @@
 [
   {
+    "identifier": "Lexnet.cc - NA",
+    "host": "lavalink.lexnet.cc",
+    "port": 443,
+    "password": "lexn3tl@val!nk",
+    "secure": true,
+    "authorId": "143556087365238784"
+  },
+  {
+    "identifier": "Lexnet.cc - EU",
+    "host": "eu-lavalink.lexnet.cc",
+    "port": 443,
+    "password": "lexn3tl@val!nk",
+    "secure": true,
+    "authorId": "143556087365238784"
+  },
+  {
+    "identifier": "Lexnet.cc - OCE",
+    "host": "oce-lavalink.lexnet.cc",
+    "port": 443,
+    "password": "lexn3tl@val!nk",
+    "secure": true,
+    "authorId": "143556087365238784"
+  },
+  {
     "identifier": "Horizxon - SG",
     "host": "lava.horizxon.tech",
     "port": 80,
