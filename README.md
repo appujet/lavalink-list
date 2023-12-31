@@ -54,11 +54,11 @@
 }
 ```
 
-- `identifier` - The identifier of your node
-- `host` - The host of your node
-- `port` - The port of your node
-- `password` - The password of your node
-- `secure` - If your node is using SSL
+- `identifier` - The identifier of your node (example: my-node)
+- `host` - The host of your node (example: lava1.example.com)
+- `port` - The port of your node (default: 2333)
+- `password` - The password of your node (if you have one)
+- `secure` - If your node is using SSL (true or false)
 - `restVersion` - The version of your node (lavalink rest api version) (v3 or v4)
 - `authorId` - Your User Discord ID (To get your avatar, name and tag foe display in the list)
 
