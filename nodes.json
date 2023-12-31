@@ -181,5 +181,13 @@
     "password": "pixelmine.games",
     "secure": false,
     "authorId": "930653904830607380"
+   },
+   {
+    "identifier": "LuxuryLabs",
+    "host": "the-net.loves-genshin.lol",
+    "port": 2333,
+    "password": "eternal",
+    "secure": false,
+    "authorId": "845287163712372756"
    }
 ]
