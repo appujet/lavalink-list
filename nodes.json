@@ -1,10 +1,47 @@
 [
   {
+    "identifier": "Lexnet.cc - NA",
+    "host": "lavalink.lexnet.cc",
+    "port": 2333,
+    "password": "lexn3tl@val!nk",
+    "secure": false,
+    "restVersion": "v3",
+    "authorId": "143556087365238784"
+  },
+  {
+    "identifier": "Lexnet.cc - EU",
+    "host": "eu-lavalink.lexnet.cc",
+    "port": 2333,
+    "password": "lexn3tl@val!nk",
+    "secure": false,
+    "restVersion": "v3",
+    "authorId": "143556087365238784"
+  },
+  {
+    "identifier": "Lexnet.cc - OCE",
+    "host": "oce-lavalink.lexnet.cc",
+    "port": 2333,
+    "password": "lexn3tl@val!nk",
+    "secure": false,
+    "restVersion": "v3",
+    "authorId": "143556087365238784"
+  },
+  {
+    "identifier": "Lexnet.cc - NA",
+    "host": "lavalink.lexnet.cc",
+    "port": 443,
+    "password": "lexn3tl@val!nk",
+    "secure": true,
+    "restVersion": "v3",
+    "authorId": "143556087365238784"
+  },
+  {
     "identifier": "Horizxon - SG",
     "host": "lava.horizxon.tech",
     "port": 80,
     "password": "horizxon.tech",
     "secure": false,
+    "restVersion": "v3",
     "authorId": "410380919212605440"
   },
   {
@@ -13,6 +50,7 @@
     "port": 443,
     "password": "horizxon.tech",
     "secure": true,
+    "restVersion": "v3",
     "authorId": "410380919212605440"
   },
   {
@@ -21,6 +59,7 @@
     "port": 443,
     "password": "horizxon.tech",
     "secure": true,
+    "restVersion": "v3",
     "authorId": "410380919212605440"
   },
   {
@@ -29,6 +68,7 @@
     "port": 443,
     "password": "horizxon.tech",
     "secure": true,
+    "restVersion": "v3",
     "authorId": "410380919212605440"
   },
   {
@@ -37,6 +77,7 @@
     "port": 4026,
     "password": "reedrousisgayy",
     "secure": false,
+    "restVersion": "v3",
     "authorId": "135132310260416512"
   },
   {
@@ -45,6 +86,7 @@
     "port": 88,
     "password": "stonemusicgay",
     "secure": false,
+    "restVersion": "v3",
     "authorId": "238477261781598219"
   },
   {
@@ -53,6 +95,7 @@
     "port": 2333,
     "password": "meowicelava",
     "secure": false,
+    "restVersion": "v3",
     "authorId": "666824403216105483"
   },
   {
@@ -61,6 +104,61 @@
     "port": 25579,
     "password": "meowicelava",
     "secure": false,
+    "restVersion": "v3",
     "authorId": "666824403216105483"
+  },
+  {
+    "identifier": "Moonu (US)",
+    "host": "104.168.24.225",
+    "port": 2333,
+    "password": "moon81238!",
+    "secure": false,
+    "restVersion": "v3",
+    "authorId": "497768011118280716"
+  },
+  {
+    "identifier": "Made by TRAGIC",
+    "host": "51.161.130.134",
+    "port": 10449,
+    "password": "madebytragic",
+    "secure": false,
+    "restVersion": "v3",
+    "authorId": "742457036914294855"
+  },
+  {
+    "identifier": "INZEWORLD-NODE (RU)",
+    "host": "85.88.163.80",
+    "port": 3128,
+    "password": "saher.inzeworld.com",
+    "secure": false,
+    "restVersion": "v3",
+    "authorId": "454863447344021515"
+  },
+  {
+    "identifier": "PixelMine Node 1 | Germany",
+    "host": "1-de-lavalink.pixelmine.games",
+    "port": 26095,
+    "password": "pixelmine.games",
+    "secure": false,
+    "restVersion": "v3",
+    "authorId": "930653904830607380"
+  },
+  {
+    "identifier": "PixelMine Node 2 | Poland",
+    "host": "2-pl-lavalink.pixelmine.games",
+    "port": 25722,
+    "password": "pixelmine.games",
+    "secure": false,
+    "restVersion": "v3",
+    "authorId": "930653904830607380"
+  },
+  {
+    "identifier": "PixelMine Node 3 | Canada",
+    "host": "3-ca-lavalink.pixelmine.games",
+    "port": 26288,
+    "password": "pixelmine.games",
+    "secure": false,
+    "restVersion": "v3",
+    "authorId": "930653904830607380"
   }
 ]
