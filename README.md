@@ -47,6 +47,7 @@
         "port": 2333,
         "password": "example.com",
         "secure": false,
+        "restVersion": "v3",
         "authorId": "959276033683628122"
     }
   ]
@@ -58,6 +59,7 @@
 - `port` - The port of your node
 - `password` - The password of your node
 - `secure` - If your node is using SSL
+- `restVersion` - The version of your node (lavalink rest api version) (v3 or v4)
 - `authorId` - Your User Discord ID (To get your avatar, name and tag foe display in the list)
 
 ## Contributores
