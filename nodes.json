@@ -169,5 +169,14 @@
     "secure": false,
     "restVersion": "v3",
     "authorId": "135132310260416512"
+  },
+  {
+    "identifier": "LuxuryLabs",
+    "host": "the-net.loves-genshin.lol",
+    "port": 2333,
+    "password": "eternal",
+    "secure": false,
+    "restVersion": "v3",
+    "authorId": "845287163712372756"
   }
 ]
