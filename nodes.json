@@ -73,9 +73,9 @@
   },
   {
     "identifier": "towdawg",
-    "host": "74.201.216.46",
-    "port": 4026,
-    "password": "reedrousisgayy",
+    "host": "132.145.228.184",
+    "port": 27003,
+    "password": "reedroux.biz",
     "secure": false,
     "restVersion": "v3",
     "authorId": "135132310260416512"
@@ -161,13 +161,4 @@
     "restVersion": "v3",
     "authorId": "930653904830607380"
   },
-  {
-    "identifier": "Reedroux",
-    "host": "132.145.228.184",
-    "port": 27003,
-    "password": "reedroux.biz",
-    "secure": false,
-    "restVersion": "v3",
-    "authorId": "135132310260416512"
-  }
 ]
