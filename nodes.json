@@ -169,5 +169,14 @@
     "secure": false,
     "restVersion": "v3",
     "authorId": "135132310260416512"
+  },
+  {
+    "identifier": "GlassHost - NY1",
+    "host": "n1.ll.darrennathanael.com",
+    "port": 2269,
+    "password": "glasshost1984",
+    "secure": false,
+    "restVersion": "v3",
+    "authorId": "508296903960821771"
   }
 ]
