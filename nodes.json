@@ -73,9 +73,9 @@
   },
   {
     "identifier": "towdawg",
-    "host": "74.201.216.46",
-    "port": 4026,
-    "password": "reedrousisgayy",
+    "host": "132.145.228.184",
+    "port": 27003,
+    "password": "reedroux.biz",
     "secure": false,
     "restVersion": "v3",
     "authorId": "135132310260416512"
@@ -161,6 +161,7 @@
     "restVersion": "v3",
     "authorId": "930653904830607380"
   },
+
   {
     "identifier": "Reedroux",
     "host": "132.145.228.184",
@@ -171,6 +172,7 @@
     "authorId": "135132310260416512"
   },
   {
+
     "identifier": "GlassHost - NY1",
     "host": "n1.ll.darrennathanael.com",
     "port": 2269,
@@ -178,5 +180,16 @@
     "secure": false,
     "restVersion": "v3",
     "authorId": "508296903960821771"
+  },
+  {
+    "identifier": "OVH Quebec 01",
+    "host": "lavalink.micium-hosting.com",
+    "port": 1027,
+    "password": "micium-hosting.com",
+    "secure": false,
+    "restVersion": "v4",
+    "authorId": "1080293360276873216"
+
   }
+
 ]
