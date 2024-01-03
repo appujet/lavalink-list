@@ -1,5 +1,23 @@
 [
     {
+        "identifier": "WeissX Node 1",
+        "host": "node2.alfari.id",
+        "port": 6010,
+        "password": "youshallnotpass",
+        "secure": false,
+        "restVersion": "v3",
+        "authorId": "485472723884310539"
+    },
+    {
+        "identifier": "WeissX Node 2",
+        "host": "node2.alfari.id",
+        "port": 6013,
+        "password": "youshallnotpass",
+        "secure": false,
+        "restVersion": "v3",
+        "authorId": "485472723884310539"
+    },
+    {
         "authorId": "454863447344021515",
         "host": "85.88.163.80",
         "identifier": "INZEWORLD-NODE (RU)",
