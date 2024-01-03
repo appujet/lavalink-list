@@ -169,5 +169,14 @@
     "secure": false,
     "restVersion": "v3",
     "authorId": "135132310260416512"
+  },
+  {
+    "identifier": "OVH Quebec 01",
+    "host": "lavalink.micium-hosting.com",
+    "port": 1027,
+    "password": "micium-hosting.com",
+    "secure": false,
+    "restVersion": "v4",
+    "authorId": "1080293360276873216"
   }
 ]
