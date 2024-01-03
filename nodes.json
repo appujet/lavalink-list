@@ -1,5 +1,23 @@
 [
   {
+    "identifier": "WeissX Node 1",
+    "host": "node2.alfari.id",
+    "port": 6010,
+    "password": "youshallnotpass",
+    "secure": false,
+    "restVersion": "v3",
+    "authorId": "485472723884310539"
+  },
+  {
+    "identifier": "WeissX Node 2",
+    "host": "node2.alfari.id",
+    "port": 6013,
+    "password": "youshallnotpass",
+    "secure": false,
+    "restVersion": "v3",
+    "authorId": "485472723884310539"
+  },
+  {
     "identifier": "Lexnet.cc - NA",
     "host": "lavalink.lexnet.cc",
     "port": 2333,
