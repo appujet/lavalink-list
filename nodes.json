@@ -162,30 +162,12 @@
         "secure": false
     },
     {
-        "authorId": "930653904830607380",
-        "host": "2-pl-lavalink.pixelmine.games",
-        "identifier": "PixelMine Node 2 | Poland",
-        "password": "pixelmine.games",
-        "port": 25722,
-        "restVersion": "v3",
-        "secure": false
-    },
-    {
         "authorId": "1080293360276873216",
         "host": "lavalink.micium-hosting.com",
         "identifier": "OVH Quebec 01",
         "password": "micium-hosting.com",
         "port": 1027,
         "restVersion": "v4",
-        "secure": false
-    },
-    {
-        "authorId": "930653904830607380",
-        "host": "1-de-lavalink.pixelmine.games",
-        "identifier": "PixelMine Node 1 | Germany",
-        "password": "pixelmine.games",
-        "port": 26095,
-        "restVersion": "v3",
         "secure": false
     },
     {
@@ -205,14 +187,5 @@
         "port": 443,
         "restVersion": "v3",
         "secure": true
-    },
-    {
-        "authorId": "930653904830607380",
-        "host": "3-ca-lavalink.pixelmine.games",
-        "identifier": "PixelMine Node 3 | Canada",
-        "password": "pixelmine.games",
-        "port": 26288,
-        "restVersion": "v3",
-        "secure": false
     }
 ]
