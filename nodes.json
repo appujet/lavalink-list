@@ -1,23 +1,5 @@
 [
     {
-        "identifier": "EnourDev 1",
-        "host": "158.101.190.108",
-        "port": 27530,
-        "password": "enour-dev",
-        "secure": false,
-        "restVersion": "v4",
-        "authorId": "393798172591259651"
-    },
-    {
-        "identifier": "EnourDev 2",
-        "host": "158.101.190.108",
-        "port": 27531,
-        "password": "enour-dev",
-        "secure": false,
-        "restVersion": "v3",
-        "authorId": "393798172591259651"
-    },
-    {
         "identifier": "WeissX Node 1",
         "host": "node2.alfari.id",
         "port": 6010,
