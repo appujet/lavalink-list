@@ -188,5 +188,23 @@
         "port": 443,
         "restVersion": "v3",
         "secure": true
+    },
+    {
+        "identifier": "It'z Zoldy",
+        "host": "139.99.124.43",
+        "port": 7780,
+        "password": "PasswordIsZoldy",
+        "secure": false,
+        "restVersion": "v4",
+        "authorId": "971020975258869790"
+    },
+    {
+        "identifier": "It'z Zoldy 2",
+        "host": "139.99.124.43",
+        "port": 7784,
+        "password": "PasswordIsZoldy",
+        "secure": false,
+        "restVersion": "v4",
+        "authorId": "971020975258869790"
     }
 ]
