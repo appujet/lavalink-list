@@ -1,5 +1,14 @@
 [
     {
+        "authorId": "581671881313353731",
+        "host": "lavalink.teramont.net",
+        "identifier": "Teramont Host - Lavalink",
+        "password": "eHKuFcz67k4lBS64",
+        "port": 443,
+        "restVersion": "v3",
+        "secure": true
+    },
+    {
         "identifier": "WeissX Node 1",
         "host": "node2.alfari.id",
         "port": 6010,
