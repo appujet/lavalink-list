@@ -166,7 +166,6 @@
         "host": "lavalink.micium-hosting.com",
         "identifier": "OVH Quebec 01",
         "password": "micium-hosting.com",
-
         "port": 80,
         "restVersion": "v3",
         "secure": false
