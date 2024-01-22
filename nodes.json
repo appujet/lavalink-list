@@ -223,5 +223,14 @@
         "secure": false,
         "restVersion": "v4",
         "authorId": "971020975258869790"
+    },
+    {
+        "identifier": "freeForAll",
+        "host": "lavalink.akshtt.uk.to",
+        "port": 6488,
+        "password": "admin",
+        "secure": false,
+        "restVersion": "v3",
+        "authorId": "1056531806763102218"
     }
 ]
