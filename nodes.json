@@ -232,5 +232,14 @@
         "secure": false,
         "restVersion": "v3",
         "authorId": "1056531806763102218"
+    },
+    {
+        "identifier": "freeForAllPremium",
+        "host": "lava.akshtt.uk.to",
+        "port": 4976,
+        "password": "admin",
+        "secure": false,
+        "restVersion": "v3",
+        "authorId": "1056531806763102218"
     }
 ]
