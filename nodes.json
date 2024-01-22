@@ -18,6 +18,15 @@
         "authorId": "485472723884310539"
     },
     {
+        "identifier": "Creavite US1 Lavalink",
+        "host": "us1.lavalink.creavite.co",
+        "port": 20080,
+        "password": "auto.creavite.co",
+        "secure": false,
+        "restVersion": "v4",
+        "authorId": "217993049802801152"
+    },
+    {
         "identifier": "WeissX Node 2",
         "host": "node2.alfari.id",
         "port": 6013,
