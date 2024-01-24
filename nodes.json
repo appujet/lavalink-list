@@ -245,7 +245,7 @@
     {
         "identifier": "Akshtt - v4 Premium",
         "host": "lava4.akshtt.is-a.dev",
-        "port": 433,
+        "port": 443,
         "password": "admin",
         "secure": true,
         "restVersion": "v4",
