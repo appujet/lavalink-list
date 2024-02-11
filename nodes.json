@@ -259,5 +259,14 @@
         "secure": true,
         "restVersion": "v4",
         "authorId": "1056531806763102218"
+    },
+    {
+        "identifier": "OptikHost - v3",
+        "host": "129.154.47.57",
+        "port": 25997,
+        "password": "admin",
+        "secure": false,
+        "restVersion": "v3",
+        "authorId": "809894927299248200"
     }
 ]
