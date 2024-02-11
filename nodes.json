@@ -235,28 +235,28 @@
     },
     {
         "identifier": "Akshtt - Free",
-        "host": "lavalink.akshtt.uk.to",
-        "port": 6488,
+        "host": "lavalink.akshtt.is-a.dev",
+        "port": 443,
         "password": "admin",
-        "secure": false,
+        "secure": true,
         "restVersion": "v3",
         "authorId": "1056531806763102218"
     },
     {
         "identifier": "Akshtt - v3 Premium",
-        "host": "lava.akshtt.uk.to",
-        "port": 4976,
+        "host": "lava3.akshtt.is-a.dev",
+        "port": 443,
         "password": "admin",
-        "secure": false,
+        "secure": true,
         "restVersion": "v3",
         "authorId": "1056531806763102218"
     },
     {
         "identifier": "Akshtt - v4 Premium",
-        "host": "lava.akshtt.uk.to",
-        "port": 5162,
+        "host": "lava4.akshtt.is-a.dev",
+        "port": 443,
         "password": "admin",
-        "secure": false,
+        "secure": true,
         "restVersion": "v4",
         "authorId": "1056531806763102218"
     }
