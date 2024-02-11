@@ -8,6 +8,33 @@
         "restVersion": "v3",
         "secure": true
     },
+        {
+        "authorId": "867303900884893727",
+        "host": "lavalink-localnet.ajieblogs.eu.org",
+        "identifier": "AjieDev - LocalNet Lavalink [SSL | UK]",
+        "password": "https://dsc.gg/ajidevserver",
+        "port": 443,
+        "restVersion": "v3",
+        "secure": true
+    },
+    {
+        "authorId": "867303900884893727",
+        "host": "localnet-id.ajiehost.rf.gd",
+        "identifier": "AjieDev - LocalNet Lavalink [Non SSL | ID]",
+        "password": "https://dsc.gg/ajidevserver",
+        "port": 540,
+        "restVersion": "v3",
+        "secure": false
+    },
+        {
+        "authorId": "867303900884893727",
+        "host": "localnet-sg2.ajiehost.rf.gd",
+        "identifier": "AjieDev - LocalNet Lavalink [Non SSL | SG]",
+        "password": "https://dsc.gg/ajidevserver",
+        "port": 50243,
+        "restVersion": "v3",
+        "secure": false
+    },
     {
         "identifier": "WeissX Node 1",
         "host": "node2.alfari.id",
