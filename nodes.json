@@ -269,4 +269,13 @@
         "restVersion": "v3",
         "authorId": "809894927299248200"
     }
+    {
+        "identifier": "Chompu#7744",
+        "host": "lavalink.chompubot.work",
+        "port": 2333,
+        "password": "somboytiger",
+        "secure": false,
+        "restVersion": "v4",
+        "authorId": "919878532228841532"
+    }
 ]
