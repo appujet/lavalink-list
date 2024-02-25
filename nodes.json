@@ -10,8 +10,8 @@
     },
         {
         "authorId": "867303900884893727",
-        "host": "lavalink-localnet.ajieblogs.eu.org",
-        "identifier": "AjieDev - LocalNet Lavalink [SSL | UK]",
+        "host": "lava-v3.ajieblogs.eu.org",
+        "identifier": "AjieDev - Lavalink [SSL | UK]",
         "password": "https://dsc.gg/ajidevserver",
         "port": 443,
         "restVersion": "v3",
