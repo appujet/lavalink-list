@@ -268,5 +268,23 @@
         "secure": false,
         "restVersion": "v3",
         "authorId": "809894927299248200"
+    },
+    {
+        "identifier": "Remii - V3",
+        "host": "lava3.fypmoon.org",
+        "port": 14003,
+        "password": "oneofremii",
+        "secure": false,
+        "restVersion": "v3",
+        "authorId": "886971572668219392"
+    },
+    {
+        "identifier": "Remii - V4",
+        "host": "lava4.fypmoon.org",
+        "port": 14009,
+        "password": "oneofremii",
+        "secure": false,
+        "restVersion": "v4",
+        "authorId": "886971572668219392"
     }
 ]
