@@ -1,5 +1,14 @@
 [
     {
+        "authorId": "883214512398925884",
+        "host": "85.215.54.40",
+        "identifier": "Musi Node - The Best Music Bot",
+        "password": "Musi",
+        "port": 3005,
+        "restVersion": "v3",
+        "secure": false
+    },
+    {
         "authorId": "581671881313353731",
         "host": "lavalink.teramont.net",
         "identifier": "Teramont Host - Lavalink",
