@@ -243,24 +243,6 @@
         "authorId": "1056531806763102218"
     },
     {
-        "identifier": "Akshtt - v3 Premium",
-        "host": "lava3.akshtt.is-a.dev",
-        "port": 443,
-        "password": "admin",
-        "secure": true,
-        "restVersion": "v3",
-        "authorId": "1056531806763102218"
-    },
-    {
-        "identifier": "Akshtt - v4 Premium",
-        "host": "lava4.akshtt.is-a.dev",
-        "port": 443,
-        "password": "admin",
-        "secure": true,
-        "restVersion": "v4",
-        "authorId": "1056531806763102218"
-    },
-    {
         "identifier": "OptikHost - v3",
         "host": "129.154.47.57",
         "port": 25997,
