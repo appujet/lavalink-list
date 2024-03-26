@@ -190,11 +190,11 @@
     },
     {
         "authorId": "135132310260416512",
-        "host": "132.145.228.184",
+        "host": "212.192.29.91",
         "identifier": "Reedroux",
-        "password": "reedroux.biz",
-        "port": 27003,
-        "restVersion": "v3",
+        "password": "reedrouxv4lavalink",
+        "port": 25529,
+        "restVersion": "v4.0.4",
         "secure": false
     },
     {
