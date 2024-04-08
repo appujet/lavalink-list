@@ -195,9 +195,10 @@
         "identifier": "Reedroux",
         "password": "reedrouxv4lavalink",
         "port": 25529,
-        "restVersion": "v4.0.4"
+        "restVersion": "v4"
     },
     {
+        "authorId": "135132310260416512",
         "host": "212.192.29.41",
         "identifier": "Reedroux",
         "password": "reedrouxbiztexaskms",
