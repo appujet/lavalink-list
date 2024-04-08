@@ -1,0 +1,35 @@
+name: Remove Duplicate Nodes
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  remove_duplicates:
+    runs-on: ubuntu-latest
+
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Python Script
+        run: python remove_duplicates.py
+
+      - name: Commit Changes
+        run: |
+          git config --global user.email "github-actions@users.noreply.github.com"
+          git config --global user.name "GitHub Actions"
+          git add .
+          git diff-index --quiet HEAD || git commit -m "Remove duplicate nodes"
+          git push
