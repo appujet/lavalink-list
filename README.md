@@ -25,8 +25,11 @@
 </div>
 
 <!-- website preview using i frames -->
-<div align="center">
-  <iframe src="https://lavainfo.netlify.app/non-ssl" title="Lavalink list" width="100%" height="500px"></iframe>
+<div style="overflow-x: auto; white-space: nowrap;">
+  <img src="https://raw.githubusercontent.com/appujet/lavalink-list/main/assets/non-ssl.png" alt="preview" width="400">
+  <img src="https://raw.githubusercontent.com/appujet/lavalink-list/main/assets/ssl.png" alt="preview" width="400">
+  <img src="https://raw.githubusercontent.com/appujet/lavalink-list/main/assets/faq.png" alt="preview" width="400">
+  <img src="https://raw.githubusercontent.com/appujet/lavalink-list/main/assets/home.png" alt="preview" width="400">
 </div>
 
 <!-- how to add my node -->
