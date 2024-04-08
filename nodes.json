@@ -18,6 +18,24 @@
         "secure": true
     },
     {
+        "authorId": "581671881313353731",
+        "host": "lavalink.teramont.net",
+        "identifier": "Teramont Host - Lavalink",
+        "password": "eHKuFcz67k4lBS64",
+        "port": 443,
+        "restVersion": "v3",
+        "secure": true
+    },
+    {
+        "authorId": "867303900884893727",
+        "host": "lava-v3.ajieblogs.eu.org",
+        "identifier": "AjieDev - Lavalink [SSL | UK]",
+        "password": "https://dsc.gg/ajidevserver",
+        "port": 443,
+        "restVersion": "v3",
+        "secure": true
+    },
+    {
         "authorId": "867303900884893727",
         "host": "localnet-id.ajiehost.rf.gd",
         "identifier": "AjieDev - Lavalink [Non SSL | ID]",
