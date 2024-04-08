@@ -4,12 +4,20 @@ on:
   push:
     branches:
       - main
+  pull_request:
+    types: [closed]
 
 jobs:
   remove_duplicates:
     runs-on: ubuntu-latest
 
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    if: >
+      github.event_name == 'push' && 
+      github.ref == 'refs/heads/main' && 
+      github.actor.login == 'github-actions[bot]' || 
+      github.event_name == 'pull_request' && 
+      github.event.pull_request.merged == true &&
+      github.actor.login == 'github-actions[bot]'
 
     steps:
       - name: Checkout Repository
