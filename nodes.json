@@ -259,5 +259,14 @@
         "secure": false,
         "restVersion": "v3",
         "authorId": "809894927299248200"
+    },
+    {
+        "identifier": "HANMETAFORCE - v4",
+        "host": "45.137.70.68",
+        "port": 8028,
+        "password": "hanmetaforce",
+        "secure": false,
+        "restVersion": "v4",
+        "authorId": "917913229668274186"
     }
 ]
