@@ -70,8 +70,7 @@
 Thanks goes to these wonderful people :
 
 <a href="https://github.com/appujet/lavalink-list/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=ap
-pujet/lavalink-list" />
+  <img src="https://contrib.rocks/image?repo=appujet/lavalink-list" alt="contributors" width="500" />
 </a>
 
 <!-- links -->
