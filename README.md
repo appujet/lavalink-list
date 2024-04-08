@@ -25,10 +25,11 @@
 </div>
 
 <!-- previews images -->
-## Previews
-
-![preview](https://raw.githubusercontent.com/appujet/lavalink-list/main/assets/non-ssl.png)
-![preview](https://raw.githubusercontent.com/appujet/lavalink-list/main/assets/ssl.png)
+<div style="overflow-x: auto; white-space: nowrap;">
+  <img src="https://raw.githubusercontent.com/appujet/lavalink-list/main/assets/non-ssl.png" alt="preview" width="400">
+  <img src="https://raw.githubusercontent.com/appujet/lavalink-list/main/assets/ssl.png" alt="preview" width="400">
+  <img src="https://raw.githubusercontent.com/appujet/lavalink-list/main/assets/faq.png" alt="preview" width="400">
+</div>
 
 <!-- how to add my node -->
 ## How to add my node?
