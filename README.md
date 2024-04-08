@@ -6,28 +6,29 @@
 
 <!-- jumbotron with links -->
 <div align="center">
-  <a href="https://lavalink.moebot.pro/">
-    <img src="https://media.discordapp.net/attachments/876035356460462090/887728792926290091/20210820_124325.png" alt="logo" width="80" height="80">
+  <a href="https://lavainfo.netlify.app/">
+    <img src="https://raw.githubusercontent.com/appujet/lavalink-list/main/assets/logo.png" alt="logo" width="80" height="80">
   </a>
   <h3 align="center">Lavalink list</h3>
   <p align="center">
     A list of free and available public Lavalink nodes with their live status. Feel free to make a pull request!
     <br />
     <br />
-    <a href="https://lavalink.moebot.pro/">View Demo</a>
+    <a href="https://lavainfo.netlify.app/">View Website</a>
     .
-    <a href="https://github.com/brblacky/lavalink-list/pulls">Make a pull request</a>
+    <a href="https://github.com/appujet/lavalink-list/pulls">Make a pull request</a>
     ·
-    <a href="https://github.com/brblacky/lavalink-list/issues">Report Bug/Request Feature</a>
+    <a href="https://github.com/appujet/lavalink-list/issues">Report Bug/Request Feature</a>
     ·
-    <a href="https://discord.gg/q45tURe2Pq">Support Server</a>
+    <a href="https://discord.gg/uRJD4XBPes">Support Server</a>
   </p>
 </div>
 
 <!-- previews images -->
 ## Previews
-![preview](https://cdn.discordapp.com/attachments/942120006219624469/1158375903114575872/image.png)
-![preview](https://cdn.discordapp.com/attachments/942120006219624469/1158375903399772210/image.png)
+
+![preview](https://raw.githubusercontent.com/appujet/lavalink-list/main/assets/non-ssl.png)
+![preview](https://raw.githubusercontent.com/appujet/lavalink-list/main/assets/ssl.png)
 
 <!-- how to add my node -->
 ## How to add my node?
@@ -66,17 +67,18 @@
 
 Thanks goes to these wonderful people :
 
-<a href="https://github.com/brblacky/lavalink-list/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=brblacky/lavalink-list" />
+<a href="https://github.com/appujet/lavalink-list/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=ap
+pujet/lavalink-list" />
 </a>
 
 <!-- links -->
-[contributors-shield]: https://img.shields.io/github/contributors/brblacky/lavalink-list.svg?style=for-the-badge
-[issues-shield]: https://img.shields.io/github/issues/brblacky/lavalink-list.svg?style=for-the-badge
-[forks-shield]: https://img.shields.io/github/forks/brblacky/lavalink-list.svg?style=for-the-badge
-[stars-shield]: https://img.shields.io/github/stars/brblacky/lavalink-list.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/appujet/lavalink-list.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/appujet/lavalink-list.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/appujet/lavalink-list.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/appujet/lavalink-list.svg?style=for-the-badge
 
-[contributors-url]: https://github.com/brblacky/lavalink-list/graphs/contributors
-[issues-url]:  https://github.com/brblacky/lavalink-list/issues
-[forks-url]:  https://github.com/brblacky/lavalink-list/network/members
-[stars-url]:  https://github.com/brblacky/lavalink-list/stargazers
+[contributors-url]: https://github.com/appujet/lavalink-list/graphs/contributors
+[issues-url]:  https://github.com/appujet/lavalink-list/issues
+[forks-url]:  https://github.com/appujet/lavalink-list/network/members
+[stars-url]:  https://github.com/appujet/lavalink-list/stargazers
