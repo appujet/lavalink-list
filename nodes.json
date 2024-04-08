@@ -8,7 +8,7 @@
         "restVersion": "v3",
         "secure": true
     },
-        {
+    {
         "authorId": "867303900884893727",
         "host": "lava-v3.ajieblogs.eu.org",
         "identifier": "AjieDev - Lavalink [SSL | UK]",
@@ -26,7 +26,7 @@
         "restVersion": "v3",
         "secure": false
     },
-        {
+    {
         "authorId": "867303900884893727",
         "host": "localnet-sg2.ajiehost.rf.gd",
         "identifier": "AjieDev - Lavalink [Non SSL | SG]",
@@ -190,14 +190,14 @@
     },
     {
         "authorId": "135132310260416512",
-        "secure": false
+        "secure": false,
         "host": "212.192.29.91",
         "identifier": "Reedroux",
         "password": "reedrouxv4lavalink",
         "port": 25529,
-        "restVersion": "v4.0.4",
+        "restVersion": "v4.0.4"
     },
-  {
+    {
         "host": "212.192.29.41",
         "identifier": "Reedroux",
         "password": "reedrouxbiztexaskms",
