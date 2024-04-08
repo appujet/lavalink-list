@@ -162,15 +162,6 @@
         "secure": false
     },
     {
-        "authorId": "143556087365238784",
-        "host": "lavalink.lexnet.cc",
-        "identifier": "Lexnet.cc - NA",
-        "password": "lexn3tl@val!nk",
-        "port": 443,
-        "restVersion": "v3",
-        "secure": true
-    },
-    {
         "authorId": "410380919212605440",
         "host": "lava.horizxon.tech",
         "identifier": "Horizxon - SG",
@@ -196,15 +187,6 @@
         "password": "reedrouxv4lavalink",
         "port": 25529,
         "restVersion": "v4"
-    },
-    {
-        "authorId": "135132310260416512",
-        "host": "212.192.29.41",
-        "identifier": "Reedroux",
-        "password": "reedrouxbiztexaskms",
-        "port": 25336,
-        "restVersion": "v3",
-        "secure": false
     },
     {
         "authorId": "508296903960821771",
