@@ -6,7 +6,9 @@ on:
 
 jobs:
   update:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-lates
+    
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
 
     steps:
     - name: Checkout Repository
