@@ -1,11 +1,12 @@
 name: Update Nodes
 
 on:
+  schedule:
+    - cron: '*/1 * * * *'  # Runs every minute
   push:
     branches:
       - main
-  schedule:
-    - cron: '*/1 * * * *'  # Runs every minute
+  
 
 jobs:
   update:
