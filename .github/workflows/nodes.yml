@@ -1,6 +1,9 @@
 name: Update Nodes
 
 on:
+  push:
+    branches:
+      - main
   schedule:
     - cron: '*/1 * * * *'  # Runs every minute
 
@@ -8,6 +11,8 @@ jobs:
   update:
     runs-on: ubuntu-latest
 
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v2
