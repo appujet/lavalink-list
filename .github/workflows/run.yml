@@ -7,7 +7,7 @@ on:
 jobs:
   update:
     runs-on: ubuntu-lates
-    
+
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
 
     steps:
@@ -27,6 +27,7 @@ jobs:
       run: |
         poetry install
 
+      
     - name: Run Python Script
       env:
         DATABASE_URL: ${{ secrets.DATABASE_URL }}
