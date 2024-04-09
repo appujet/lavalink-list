@@ -33,3 +33,19 @@ jobs:
           git add .
           git diff-index --quiet HEAD || git commit -m "Remove duplicate nodes"
           git push
+
+      - name: Trigger Update Nodes Workflow
+        uses: actions/github-script@v4
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const { data: workflows } = await github.actions.listRepoWorkflows({
+              owner: context.repo.owner,
+              repo: context.repo.repo
+            });
+            const updateNodesWorkflow = workflows.workflows.find(workflow => workflow.name === 'Update Nodes');
+            await github.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: updateNodesWorkflow.id
+            });
