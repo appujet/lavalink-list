@@ -238,9 +238,10 @@ async def main():
     await db.disconnect()
 
 
-async def loop_main():
+async def run_main_loop():
     while True:
-        asyncio.run(main())
+        await main()
         await asyncio.sleep(60)
 
-asyncio.run(loop_main())
+# Run the event loop
+asyncio.run(run_main_loop())
