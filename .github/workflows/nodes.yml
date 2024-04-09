@@ -2,7 +2,7 @@ name: Update Nodes
 
 on:
   schedule:
-    - cron: '*/1 * * * *'
+    - cron: '*/5 * * * *'  # Runs every 5 minutes, avoiding high load times
   
 jobs:
   update:
