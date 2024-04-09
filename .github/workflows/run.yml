@@ -8,8 +8,6 @@ jobs:
   update:
     runs-on: ubuntu-lates
 
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v2
