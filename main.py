@@ -237,11 +237,6 @@ async def main():
 
     await db.disconnect()
 
+asyncio.run(main())
 
-async def run_main_loop():
-    while True:
-        await main()
-        await asyncio.sleep(60)
 
-# Run the event loop
-asyncio.run(run_main_loop())
