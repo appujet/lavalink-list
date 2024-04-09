@@ -104,7 +104,6 @@ async def update_node_info(db: Prisma, node, info, stats, user):
             }
           }
         )
-        print(f"Updated node: {node['identifier']}")
     except Exception as e:
         print(f"Error updating node {node['identifier']} info: {str(e)}")
 
