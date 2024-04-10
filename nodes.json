@@ -262,8 +262,8 @@
     },
     {
         "identifier": "HANMETAFORCE - v4",
-        "host": "45.137.70.68",
-        "port": 8028,
+        "host": "node.catfein.com",
+        "port": 30034,
         "password": "hanmetaforce",
         "secure": false,
         "authorId": "917913229668274186",
