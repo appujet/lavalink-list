@@ -1,0 +1,12 @@
+{
+    "apps": [
+        {
+            "name": "lava-list-api",
+            "script": "build/index.js",
+            "node_args": [
+                "--enable-source-maps"
+            ],
+            "restart_delay": 10000
+        }
+    ]
+}

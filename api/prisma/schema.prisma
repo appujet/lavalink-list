@@ -1,0 +1,33 @@
+
+generator client {
+  provider = "prisma-client-js"
+  previewFeatures = ["driverAdapters"]
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_DATABASE_URL")
+}
+
+model Node {
+  authorId    String
+  host        String
+  identifier  String    @unique
+  password    String
+  port        Int
+  restVersion String
+  secure      Boolean
+  isConnected Boolean   @default(false)
+  info        Json?
+  author      Json?
+  memory      String?
+  connections String?
+  systemLoad  String?
+  cpuCores    Int?
+  uptime      String?
+  cpu         String?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}
+
