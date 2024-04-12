@@ -182,10 +182,10 @@
     {
         "authorId": "135132310260416512",
         "secure": false,
-        "host": "212.192.29.91",
+        "host": "89.58.5.180",
         "identifier": "Reedroux",
         "password": "reedrouxv4lavalink",
-        "port": 25529,
+        "port": 20906,
         "restVersion": "v4"
     },
     {
