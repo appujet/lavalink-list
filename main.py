@@ -133,74 +133,77 @@ async def check_node_online(session, db, node):
                             print(f"Updated node: {node['identifier']}")
                         else:
                             # Node is offline, update its status in the database
-                            await update_node_offline(db, node)
+                            await update_node_offline(db, node, None)  # Pass None as user since it's not available
                             print(f"{node['identifier']} is offline")
             else:
                 # Node is offline, update its status in the database
-                user = await get_user_data(session, node['authorId'])
-                await update_node_offline(db, node, user)
+                await update_node_offline(db, node)  # Pass None as user since it's not available
                 print(f"{node['identifier']} is offline")
     except asyncio.TimeoutError:
         # Timeout occurred while checking the node status
         print(f"Timeout occurred while checking {node['identifier']} status")
         # Update the node status in the database to mark it as offline
-        user = await get_user_data(session, node['authorId'])
-        await update_node_offline(db, node, user)
+        await update_node_offline(db, node,)  # Pass None as user since it's not available
     except aiohttp.ClientError as e:
         # HTTP error occurred while checking the node status
         print(f"HTTP error occurred while checking {node['identifier']} status: {str(e)}")
-        user = await get_user_data(session, node['authorId'])
-        await update_node_offline(db, node, user)
+        # Update the node status in the database to mark it as offline
+        await update_node_offline(db, node)  # Pass None as user since it's not available
+    except Exception as e:
+        print(f"Error occurred while checking {node['identifier']} status: {str(e)}")
+        
 
+async def update_node_offline(db: Prisma, node):
 
-async def update_node_offline(db: Prisma, node, user):
     try:
-        info = get_default_info()
-        author_data = {
-            "authorId": node['authorId'],
-            "iconUrl": user.get('avatar', 'default_avatar_url'),  # Use default value if 'avatar' is missing
-            "username": user['username'],  # No need to handle missing username since it defaults to 'Unknown' in get_user_data
-            "url": user['url']
-        } if user else None
-        author_json = json.dumps(author_data)
-        info_json = json.dumps(info)
-
-        await db.node.upsert(
-            where={"identifier": node['identifier']},
-            data={
-                "update": {
-                    "isConnected": False,
-                    "info": info_json,
-                    "memory": "0 B - 0.0%",
-                    "cpu": "0.0%",
-                    "connections": "0 / 0",
-                    "systemLoad": "0.0%",
-                    "cpuCores": 0,
-                    "uptime": "0s",
-                },
-                "create": {
-                    "authorId": node['authorId'],
-                    "host": node['host'],
-                    "identifier": node['identifier'],
-                    "password": node['password'],
-                    "port": node['port'],
-                    "restVersion": node['restVersion'],
-                    "secure": node['secure'],
-                    "isConnected": False,
-                    "info": info_json,
-                    "memory": "0 B - 0.0%",
-                    "cpu": "0.0%",
-                    "connections": "0 / 0",
-                    "systemLoad": "0.0%",
-                    "cpuCores": 0,
-                    "uptime": "0s",
-                    "author": author_json
+        async with aiohttp.ClientSession() as session:
+            user = await get_user_data(session, node['authorId'])
+            author_data = {
+                "authorId": node['authorId'],
+                "iconUrl": user.get('avatar', 'default_avatar_url'),  # Use default value if 'avatar' is missing
+                "username": user['username'],  # No need to handle missing username since it defaults to 'Unknown' in get_user_data
+                "url": user['url']
+            } if user else None
+            
+            author_json = json.dumps(author_data)
+            info_json = json.dumps(get_default_info())
+            await db.node.upsert(
+                where={"identifier": node['identifier']},
+                data={
+                    "update": {
+                        "isConnected": False,
+                        "info": info_json,
+                        "memory": "0 B - 0.0%",
+                        "cpu": "0.0%",
+                        "connections": "0 / 0",
+                        "systemLoad": "0.0%",
+                        "cpuCores": 0,
+                        "uptime": "0s",
+                        "author": author_json
+                    },
+                    "create": {
+                        "authorId": node['authorId'],
+                        "host": node['host'],
+                        "identifier": node['identifier'],
+                        "password": node['password'],
+                        "port": node['port'],
+                        "restVersion": node['restVersion'],
+                        "secure": node['secure'],
+                        "isConnected": False,
+                        "info": info_json,
+                        "memory": "0 B - 0.0%",
+                        "cpu": "0.0%",
+                        "connections": "0 / 0",
+                        "systemLoad": "0.0%",
+                        "cpuCores": 0,
+                        "uptime": "0s",
+                        "author": author_json
+                    }
                 }
-            }
-        )
+            )
     except Exception as e:
         print(f"Error updating node {node['identifier']} info: {str(e)}")
-
+    
 
 # Load nodes from JSON
 with open('nodes.json') as f:
