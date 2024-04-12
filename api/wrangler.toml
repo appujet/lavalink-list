@@ -1,8 +1,0 @@
-name = "cloudflare-worker-api"
-account_id = ""
-main = "src/index.ts"
-compatibility_date = "2024-04-07"
-compatibility_flags = ["nodejs_compat"]
-
-
-[env.production.vars]
