@@ -47,9 +47,9 @@ def get_default_info():
         },
         "jvm": "Unknown",
         "lavaplayer": "Unknown",
-        "sourceManagers": ["Unknown"],
-        "filters": ["Unknown"],
-        "plugins": ["Unknown"]
+        "sourceManagers": [],
+        "filters": [],
+        "plugins": []
     }
 
 # Function to update node info in the database
