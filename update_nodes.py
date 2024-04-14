@@ -46,17 +46,17 @@ with open('nodes.json', 'w') as f:
 
 # Update database with unique nodes
 async def update_nodes(nodes):
+    print("Updating nodes in database...")
     prisma = Prisma()
     await prisma.connect()
     # delete all nodes
     await prisma.nodes.delete_many()
     # create new nodes
     await prisma.nodes.create({
-        "data": {
-            "nodes": nodes
-        }
+        "nodes": nodes
     })
     await prisma.disconnect()
 
+json_nodes = json.dumps(unique_data)
 # Call updateNodes with unique_data
-asyncio.run(update_nodes(unique_data))
+asyncio.run(update_nodes(json_nodes))
