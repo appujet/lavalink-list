@@ -225,17 +225,8 @@
         "authorId": "1056531806763102218"
     },
     {
-        "identifier": "Akshtt - v3 Premium",
-        "host": "lava3.akshtt.is-a.dev",
-        "port": 443,
-        "password": "admin",
-        "secure": true,
-        "restVersion": "v3",
-        "authorId": "1056531806763102218"
-    },
-    {
-        "identifier": "Akshtt - v4 Premium",
-        "host": "lava4.akshtt.is-a.dev",
+        "identifier": "Akshtt - v4 Free",
+        "host": "lava.akshat.tech",
         "port": 443,
         "password": "admin",
         "secure": true,
