@@ -25,8 +25,10 @@ jobs:
       - name: Generate Prisma Client
         run: |
           poetry run prisma generate
-          
+
       - name: Run Python Script
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
         run: |
           poetry run python update_nodes.py
 

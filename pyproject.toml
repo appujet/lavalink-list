@@ -2,16 +2,13 @@
 name = "lavalink-list"
 version = "0.1.0"
 description = ""
-authors = ["brblacky <sdipedit@gmail.com>"]
+authors = ["appujet <sdipedit@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
-requests = "^2.31.0"
 asyncio = "^3.4.3"
 prisma = "^0.13.1"
-aiohttp = "^3.9.3"
-js = "^1.0"
 
 
 [build-system]
