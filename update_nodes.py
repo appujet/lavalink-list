@@ -1,4 +1,6 @@
 import json
+from prisma import Prisma
+import asyncio
 
 # Function to remove duplicate nodes
 def remove_duplicates(data):
@@ -40,4 +42,21 @@ else:
 
 # Save data with restVersion added
 with open('nodes.json', 'w') as f:
-    json.dump(data, f, indent=4)
+    json.dump(unique_data, f, indent=4)
+
+# Update database with unique nodes
+async def update_nodes(nodes):
+    prisma = Prisma()
+    await prisma.connect()
+    # delete all nodes
+    await prisma.nodes.delete_many()
+    # create new nodes
+    await prisma.nodes.create({
+        "data": {
+            "nodes": nodes
+        }
+    })
+    await prisma.disconnect()
+
+# Call updateNodes with unique_data
+asyncio.run(update_nodes(unique_data))

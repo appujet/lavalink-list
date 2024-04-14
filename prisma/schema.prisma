@@ -14,15 +14,15 @@ datasource db {
 }
 
 model Node {
-  id          String    @id @default(cuid())
+  id          String   @id @default(cuid())
   authorId    String
   host        String
-  identifier  String    @unique
+  identifier  String   @unique
   password    String
   port        Int
   restVersion String
   secure      Boolean
-  isConnected Boolean   @default(false)
+  isConnected Boolean  @default(false)
   info        Json?
   author      Json?
   memory      String?
@@ -31,6 +31,13 @@ model Node {
   cpuCores    Int?
   uptime      String?
   cpu         String?
-  createdAt   DateTime  @default(now())
-  updatedAt   DateTime  @updatedAt
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Nodes {
+  id        String   @id @default(cuid())
+  nodes     Json
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }

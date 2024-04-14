@@ -1,4 +1,4 @@
-name: Remove Duplicate Nodes
+name: Update Nodes
 
 on:
   push:
@@ -15,21 +15,25 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.x'
+      - name: Install Poetry
+        run: |
+          curl -sSL https://install.python-poetry.org | python3 -
 
       - name: Install Dependencies
-        run: pip install -r requirements.txt
-
+        run: |
+          poetry install
+      - name: Generate Prisma Client
+        run: |
+          poetry run prisma generate
+          
       - name: Run Python Script
-        run: python remove_duplicates.py
+        run: |
+          poetry run python update_nodes.py
 
       - name: Commit Changes
         run: |
           git config --global user.email "github-actions@users.noreply.github.com"
           git config --global user.name "GitHub Actions"
           git add .
-          git diff-index --quiet HEAD || git commit -m "Remove duplicate nodes"
+          git diff-index --quiet HEAD || git commit -m "Update Nodes"
           git push
