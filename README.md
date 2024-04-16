@@ -18,8 +18,6 @@
     .
     <a href="https://github.com/appujet/lavalink-list/pulls">Make a pull request</a>
     ·
-    <a href="https://github.com/appujet/lavalink-list/issues">Report Bug/Request Feature</a>
-    ·
     <a href="https://discord.gg/uRJD4XBPes">Support Server</a>
   </p>
 </div>
