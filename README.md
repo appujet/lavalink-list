@@ -18,8 +18,6 @@
     .
     <a href="https://github.com/appujet/lavalink-list/pulls">Make a pull request</a>
     ·
-    <a href="https://github.com/appujet/lavalink-list/issues">Report Bug/Request Feature</a>
-    ·
     <a href="https://discord.gg/uRJD4XBPes">Support Server</a>
   </p>
 </div>
@@ -31,6 +29,8 @@
   <img src="https://raw.githubusercontent.com/appujet/lavalink-list/main/assets/faq.png" alt="preview" width="400">
   <img src="https://raw.githubusercontent.com/appujet/lavalink-list/main/assets/home.png" alt="preview" width="400">
 </div>
+
+### To set up a Lavalink server on Windows, Linux, or Replit, [Click Here.](https://github.com/LucasB25/lavalink-server)
 
 <!-- how to add my node -->
 ## How to add my node?
