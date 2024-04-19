@@ -153,6 +153,15 @@
         "secure": false
     },
     {
+        "authorId": "724533169964974112",
+        "host": "lavalink.rudracloud.com",
+        "identifier": "RudraCloud",
+        "password": "RudraCloud.com",
+        "port": 2333,
+        "restVersion": "v4",
+        "secure": false
+    },
+    {
         "authorId": "410380919212605440",
         "host": "lava.horizxon.tech",
         "identifier": "Horizxon - SG",
