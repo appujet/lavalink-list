@@ -72,15 +72,6 @@
         "secure": false
     },
     {
-        "authorId": "497768011118280716",
-        "host": "104.168.24.225",
-        "identifier": "Moonu (US)",
-        "password": "moon81238!",
-        "port": 2333,
-        "restVersion": "v3",
-        "secure": false
-    },
-    {
         "authorId": "143556087365238784",
         "host": "eu-lavalink.lexnet.cc",
         "identifier": "Lexnet.cc - EU",
