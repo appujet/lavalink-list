@@ -189,15 +189,6 @@
         "secure": false
     },
     {
-        "authorId": "1080293360276873216",
-        "host": "lavalink.micium-hosting.com",
-        "identifier": "OVH Quebec 01",
-        "password": "micium-hosting.com",
-        "port": 80,
-        "restVersion": "v3",
-        "secure": false
-    },
-    {
         "authorId": "666824403216105483",
         "host": "lava-ge.meowsmp.net",
         "identifier": "andromeda (GE)",
