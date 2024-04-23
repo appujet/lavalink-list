@@ -247,7 +247,7 @@
         "host": "us.huntercraft.co.uk",
         "port": 25587,
         "password": "lava.zoro",
-        "secure": false,
+        "secure": true,
         "restVersion": "v3",
         "authorId": "1207510451005427783"
     }
