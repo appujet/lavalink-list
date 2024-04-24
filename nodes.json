@@ -248,7 +248,7 @@
         "port": 25587,
         "password": "lava.zoro",
         "secure": false,
-        "restVersion": "v4",
+        "restVersion": "v3",
         "authorId": "1207510451005427783"
     }
 ]
