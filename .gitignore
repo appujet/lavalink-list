@@ -2,5 +2,4 @@ node_modules
 # Keep environment variables out of version control
 .env
 
-# Ignore poetry lock file
-poetry.lock
+pnpm-lock.yaml

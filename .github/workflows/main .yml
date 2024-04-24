@@ -15,22 +15,23 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
-      - name: Install Poetry
-        run: |
-          curl -sSL https://install.python-poetry.org | python3 -
+      - name: Install Node.js and Yarn
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18'
+          registry-url: 'https://registry.yarnpkg.com/'
 
       - name: Install Dependencies
-        run: |
-          poetry install
-      - name: Generate Prisma Client
-        run: |
-          poetry run prisma generate
+        run: yarn install
 
-      - name: Run Python Script
+      - name: Generate Prisma Client
+        run: npx prisma generate
+
+      - name: Run TypeScript Script
         env:
-          DATABASE_URL: ${{ secrets.DATABASE_URL }}
-        run: |
-          poetry run python update_nodes.py
+          TURSO_DATABASE_URL: ${{ secrets.TURSO_DATABASE_URL }}
+          TURSO_AUTH_TOKEN: ${{ secrets.TURSO_AUTH_TOKEN }}
+        run: yarn start
 
       - name: Commit Changes
         run: |
