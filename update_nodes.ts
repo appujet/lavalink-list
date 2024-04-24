@@ -9,7 +9,6 @@ const libsql = createClient({
 });
 
 const adapter = new PrismaLibSQL(libsql);
-
 // Define types for node objects
 interface Node {
     host: string;
