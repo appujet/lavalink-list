@@ -250,5 +250,13 @@
         "secure": false,
         "restVersion": "v3",
         "authorId": "1207510451005427783"
-    }
+    },
+    {
+        "identifier": "FatihSimsek"
+        "host": node1.paradisehost.xyz",
+        "port": 27185,
+        "password": "Lavalinkhoster123",
+        "secure": false,
+        "authorId": "701145215888523276"
+    },
 ]
