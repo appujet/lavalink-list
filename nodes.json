@@ -180,15 +180,6 @@
         "restVersion": "v4"
     },
     {
-        "authorId": "508296903960821771",
-        "host": "n1.ll.darrennathanael.com",
-        "identifier": "GlassHost - NY1",
-        "password": "glasshost1984",
-        "port": 2269,
-        "restVersion": "v4",
-        "secure": false
-    },
-    {
         "authorId": "666824403216105483",
         "host": "lava-ge.meowsmp.net",
         "identifier": "andromeda (GE)",
