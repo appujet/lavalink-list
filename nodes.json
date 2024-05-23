@@ -11,7 +11,7 @@
     {
         "authorId": "867303900884893727",
         "host": "lava-v3.ajieblogs.eu.org",
-        "identifier": "AjieDev - Lavalink [SSL | UK]",
+        "identifier": "AjieDev - Lavalink [SSL | US]",
         "password": "https://dsc.gg/ajidevserver",
         "port": 443,
         "restVersion": "v3",
@@ -19,20 +19,29 @@
     },
     {
         "authorId": "867303900884893727",
-        "host": "localnet-id.ajiehost.rf.gd",
-        "identifier": "AjieDev - Lavalink [Non SSL | ID]",
+        "host": "lava-v3.ajieblogs.eu.org",
+        "identifier": "AjieDev - Lavalink [Non SSL | US]",
         "password": "https://dsc.gg/ajidevserver",
-        "port": 540,
+        "port": 80,
         "restVersion": "v3",
         "secure": false
     },
     {
         "authorId": "867303900884893727",
-        "host": "localnet-sg2.ajiehost.rf.gd",
-        "identifier": "AjieDev - Lavalink [Non SSL | SG]",
+        "host": "lava-v4.ajieblogs.eu.org",
+        "identifier": "AjieDev - Lavalink [SSL | US]",
         "password": "https://dsc.gg/ajidevserver",
-        "port": 50243,
-        "restVersion": "v3",
+        "port": 443,
+        "restVersion": "v4",
+        "secure": true
+    },
+    {
+        "authorId": "867303900884893727",
+        "host": "lava-v4.ajieblogs.eu.org",
+        "identifier": "AjieDev - Lavalink [Non SSL | US]",
+        "password": "https://dsc.gg/ajidevserver",
+        "port": 80,
+        "restVersion": "v4",
         "secure": false
     },
     {
