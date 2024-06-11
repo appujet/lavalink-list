@@ -236,9 +236,9 @@
     },
     {
         "identifier": "Aaru - v3",
-        "host": "hk-v3.aarubot.xyz",
+        "host": "hk.aarubot.xyz",
         "port": 57095,
-        "password": "aarubot.xyz",
+        "password": "Aaru-the-cutiepie",
         "secure": false,
         "authorId": "1165609918326382656",
         "restVersion": "v3"
