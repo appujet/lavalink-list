@@ -217,9 +217,9 @@
         "authorId": "809894927299248200"
     },
     {
-        "identifier": "HANMETAFORCE - v4",
-        "host": "node.catfein.com",
-        "port": 30034,
+        "identifier": "Hanmetaforce - v4",
+        "host": "hanmetaforce.ddns.net",
+        "port": 7008,
         "password": "hanmetaforce",
         "secure": false,
         "authorId": "917913229668274186",
