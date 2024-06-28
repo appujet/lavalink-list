@@ -218,7 +218,7 @@
     },
     {
         "identifier": "HANMETAFORCE - v4",
-        "host": "hanmetaforce.ddns.net",
+        "host": "109.176.17.110",
         "port": 7008,
         "password": "hanmetaforce",
         "secure": false,
