@@ -273,7 +273,7 @@
     {
         "identifier": "Amane - v3 No SSL",
         "host": "lavalink.serenetia.com",
-        "port": 2000,
+        "port": 80,
         "password": "lavalinkv3",
         "secure": false,
         "authorId": "334307216926703616",
@@ -282,7 +282,7 @@
     {
         "identifier": "Amane - v4 No SSL",
         "host": "lavalinkv4.serenetia.com",
-        "port": 2001,
+        "port": 80,
         "password": "lavalinkv4",
         "secure": false,
         "authorId": "334307216926703616",
