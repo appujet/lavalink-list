@@ -278,5 +278,14 @@
         "secure": false,
         "authorId": "334307216926703616",
         "restVersion": "v4"
+    },
+    {
+        "identifier": "Karta Dharta",
+        "host": "node1.kartadharta.xyz",
+        "port": 3000,
+        "password": "kdlavalink",
+        "secure": false,
+        "authorId": "456130838183280651",
+        "restVersion": "v3"
     }
 ]
