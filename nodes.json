@@ -217,15 +217,6 @@
         "authorId": "809894927299248200"
     },
     {
-        "identifier": "HANMETAFORCE - v4",
-        "host": "109.176.17.110",
-        "port": 7008,
-        "password": "hanmetaforce",
-        "secure": false,
-        "authorId": "917913229668274186",
-        "restVersion": "v4"
-    },
-    {
         "identifier": "FatihSimsek - v4",
         "host": "node1.paradisehost.xyz",
         "port": 27185,
