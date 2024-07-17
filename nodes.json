@@ -1,5 +1,14 @@
 [
     {
+        "authorId": "440507637373861889",
+        "host": "lavalink.jompo.cloud",
+        "identifier": "jompo.cloud - Lavalink",
+        "password": "jompo",
+        "port": 2333,
+        "restVersion": "v4",
+        "secure": false
+    },
+    {
         "authorId": "581671881313353731",
         "host": "lavalink.teramont.net",
         "identifier": "Teramont Host - Lavalink",
