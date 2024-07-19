@@ -296,5 +296,14 @@
         "secure": false,
         "authorId": "456130838183280651",
         "restVersion": "v3"
+    },
+    {
+        "identifier": "Duck Say Quack",
+        "host": "pnode3.danbot.host",
+        "port": 5768,
+        "password": "youshallnotpass",
+        "secure": false,
+        "authorId": "878821057748926534",
+        "restVersion": "v3"
     }
 ]
