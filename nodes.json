@@ -1,5 +1,23 @@
 [
     {
+        "authorId": "410380919212605440",
+        "host": "ssl.lavalink.rocks",
+        "identifier": "Horizxon - SG",
+        "password": "horizxon.tech",
+        "port": 443,
+        "restVersion": "v4",
+        "secure": true
+    },
+    {
+        "authorId": "410380919212605440",
+        "host": "node.lavalink.rocks",
+        "identifier": "Horizxon - SG",
+        "password": "horizxon.tech",
+        "port": 80,
+        "restVersion": "v4",
+        "secure": false
+    },
+    {
         "authorId": "440507637373861889",
         "host": "lavalink.jompo.cloud",
         "identifier": "jompo.cloud - Lavalink",
@@ -91,24 +109,6 @@
         "secure": false
     },
     {
-        "authorId": "410380919212605440",
-        "host": "lava1.horizxon.tech",
-        "identifier": "Horizxon-1 (EU)",
-        "password": "horizxon.tech",
-        "port": 443,
-        "restVersion": "v3",
-        "secure": true
-    },
-    {
-        "authorId": "410380919212605440",
-        "host": "lava3.horizxon.tech",
-        "identifier": "Horizxon-3 (CA)",
-        "password": "horizxon.tech",
-        "port": 443,
-        "restVersion": "v3",
-        "secure": true
-    },
-    {
         "authorId": "742457036914294855",
         "host": "51.161.130.134",
         "identifier": "Made by TRAGIC",
@@ -154,15 +154,6 @@
         "secure": false
     },
     {
-        "authorId": "410380919212605440",
-        "host": "lava.horizxon.tech",
-        "identifier": "Horizxon - SG",
-        "password": "horizxon.tech",
-        "port": 80,
-        "restVersion": "v3",
-        "secure": false
-    },
-    {
         "authorId": "238477261781598219",
         "host": "54.38.198.24",
         "identifier": "aadi.png",
@@ -188,15 +179,6 @@
         "port": 25579,
         "restVersion": "v3",
         "secure": false
-    },
-    {
-        "authorId": "410380919212605440",
-        "host": "lava2.horizxon.tech",
-        "identifier": "Horizxon-2 (US)",
-        "password": "horizxon.tech",
-        "port": 443,
-        "restVersion": "v3",
-        "secure": true
     },
     {
         "identifier": "Akshtt - Free",
