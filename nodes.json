@@ -235,15 +235,6 @@
         "restVersion": "v4"
     },
     {
-        "identifier": "Aaru - v3",
-        "host": "hk.aarubot.xyz",
-        "port": 57095,
-        "password": "Aaru-the-cutiepie",
-        "secure": false,
-        "authorId": "1165609918326382656",
-        "restVersion": "v3"
-    },
-        {
         "identifier": "NYC Lavalink",
         "host": "nyc01.jxshua.dev",
         "port": 4000,
