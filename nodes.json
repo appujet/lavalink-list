@@ -9,30 +9,12 @@
         "secure": true
     },
     {
-        "authorId": "410380919212605440",
-        "host": "node.lavalink.rocks",
-        "identifier": "Horizxon - SG",
-        "password": "horizxon.tech",
-        "port": 80,
-        "restVersion": "v4",
-        "secure": false
-    },
-    {
         "authorId": "440507637373861889",
         "host": "lavalink-legacy.jompo.cloud",
         "identifier": "jompo.cloud - Lavalink",
         "password": "jompo",
         "port": 2333,
         "restVersion": "v3",
-        "secure": false
-    },
-    {
-        "authorId": "440507637373861889",
-        "host": "lavalink.jompo.cloud",
-        "identifier": "jompo.cloud - Lavalink",
-        "password": "jompo",
-        "port": 2333,
-        "restVersion": "v4",
         "secure": false
     },
     {
@@ -44,7 +26,6 @@
         "restVersion": "v3",
         "secure": true
     },
-    
     {
         "authorId": "867303900884893727",
         "host": "lava-v3.ajieblogs.eu.org",
