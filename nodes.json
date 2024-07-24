@@ -10,30 +10,12 @@
     },
     {
         "authorId": "410380919212605440",
-        "host": "node.lavalink.rocks",
-        "identifier": "Horizxon - SG",
-        "password": "horizxon.tech",
-        "port": 80,
-        "restVersion": "v4",
-        "secure": false
-    },
-    {
-        "authorId": "410380919212605440",
         "host": "v3.lavalink.rocks",
         "identifier": "Horizxon - EU",
         "password": "horizxon.tech",
         "port": 443,
         "restVersion": "v3",
         "secure": true
-    },
-    {
-        "authorId": "410380919212605440",
-        "host": "v3-legacy.lavalink.rocks",
-        "identifier": "Horizxon - EU",
-        "password": "horizxon.tech",
-        "port": 80,
-        "restVersion": "v3",
-        "secure": false
     },
     {
         "authorId": "440507637373861889",
