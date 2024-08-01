@@ -9,6 +9,15 @@
         "secure": true
     },
     {
+        "authorId": "410380919212605440",
+        "host": "v3.lavalink.rocks",
+        "identifier": "Horizxon - EU",
+        "password": "horizxon.tech",
+        "port": 443,
+        "restVersion": "v3",
+        "secure": true
+    },
+    {
         "authorId": "440507637373861889",
         "host": "lavalink-legacy.jompo.cloud",
         "identifier": "jompo.cloud - Lavalink",
