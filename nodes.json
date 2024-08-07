@@ -280,8 +280,8 @@
     },
     {
         "identifier": "Naig Node - 01",
-        "host": "85.202.163.135 [Non SSL]",
-        "port": 2033,
+        "host": "lavalink01.techbyte.host",
+        "port": 2005,
         "password": "NAIGLAVA-dash.techbyte.host",
         "secure": false,
         "authorId": "573709909594734603",
