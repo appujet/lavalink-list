@@ -90,38 +90,11 @@
         "secure": false
     },
     {
-        "authorId": "143556087365238784",
-        "host": "eu-lavalink.lexnet.cc",
-        "identifier": "Lexnet.cc - EU",
-        "password": "lexn3tl@val!nk",
-        "port": 2333,
-        "restVersion": "v3",
-        "secure": false
-    },
-    {
-        "authorId": "143556087365238784",
-        "host": "oce-lavalink.lexnet.cc",
-        "identifier": "Lexnet.cc - OCE",
-        "password": "lexn3tl@val!nk",
-        "port": 2333,
-        "restVersion": "v3",
-        "secure": false
-    },
-    {
         "authorId": "742457036914294855",
         "host": "51.161.130.134",
         "identifier": "Made by TRAGIC",
         "password": "madebytragic",
         "port": 10449,
-        "restVersion": "v3",
-        "secure": false
-    },
-    {
-        "authorId": "143556087365238784",
-        "host": "lavalink.lexnet.cc",
-        "identifier": "Lexnet.cc - NA",
-        "password": "lexn3tl@val!nk",
-        "port": 2333,
         "restVersion": "v3",
         "secure": false
     },
@@ -151,24 +124,6 @@
         "port": 2333,
         "restVersion": "v4",
         "secure": false
-    },
-    {
-        "authorId": "238477261781598219",
-        "host": "54.38.198.24",
-        "identifier": "aadi.png",
-        "password": "stonemusicgay",
-        "port": 88,
-        "restVersion": "v3",
-        "secure": false
-    },
-    {
-        "authorId": "135132310260416512",
-        "secure": false,
-        "host": "38.46.216.204",
-        "identifier": "reedroux.biz Salt Lake, Utah",
-        "password": "reedrouxpremiumnode",
-        "port": 25988,
-        "restVersion": "v4"
     },
     {
         "authorId": "666824403216105483",
