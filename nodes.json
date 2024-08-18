@@ -1,7 +1,17 @@
 [
+    
+    {
+        "identifier": "MYHM.Space",
+        "host": "ll3.myhm.space",
+        "port": 443,
+        "password": "d.gg/therepublic",
+        "secure": true,
+        "restVersion": "v3",
+        "authorId": "398620861634183188"
+    },
     {
         "identifier": "Horizxon - SG",
-        "host": "ssl.lavalink.rocks",
+        "host": "v4.lavalink.rocks",
         "port": 443,
         "password": "horizxon.tech",
         "secure": true,
