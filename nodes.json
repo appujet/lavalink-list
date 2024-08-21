@@ -100,13 +100,13 @@
         "authorId": "454863447344021515"
     },
     {
-        "identifier": "Made by TRAGIC",
-        "host": "51.161.130.134",
-        "port": 10449,
-        "password": "madebytragic",
+        "identifier": "Meww.me",
+        "host": "n2.meww.me",
+        "port": 2555,
+        "password": "meww.me",
         "secure": false,
-        "restVersion": "v3",
-        "authorId": "742457036914294855"
+        "restVersion": "v4",
+        "authorId": "176144329046360064"
     },
     {
         "identifier": "LuxuryLabs",
