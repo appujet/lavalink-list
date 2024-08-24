@@ -64,13 +64,13 @@
         "authorId": "867303900884893727"
     },
     {
-        "identifier": "WeissX Node 1",
-        "host": "node2.alfari.id",
-        "port": 6010,
-        "password": "youshallnotpass",
+        "identifier": "Catfein",
+        "host": "lava.catfein.com",
+        "port": 5000,
+        "password": "catfein",
         "secure": false,
-        "restVersion": "v3",
-        "authorId": "485472723884310539"
+        "restVersion": "v4",
+        "authorId": "885731228874051624"
     },
     {
         "identifier": "Creavite US1 Lavalink",
@@ -80,15 +80,6 @@
         "secure": false,
         "restVersion": "v4",
         "authorId": "217993049802801152"
-    },
-    {
-        "identifier": "WeissX Node 2",
-        "host": "node2.alfari.id",
-        "port": 6013,
-        "password": "youshallnotpass",
-        "secure": false,
-        "restVersion": "v3",
-        "authorId": "485472723884310539"
     },
     {
         "identifier": "INZEWORLD-NODE (RU)",
