@@ -1,4 +1,3 @@
-
 [![Contributors][contributors-shield]][contributors-url]
 [![Issues][issues-shield]][issues-url]
 [![Forks][forks-shield]][forks-url]
@@ -65,7 +64,7 @@
 - `restVersion` - The version of your node (lavalink rest api version) (v3 or v4)
 - `authorId` - Your User Discord ID (To get your avatar, name and tag foe display in the list)
 
-## Contributores
+## Contributers
 
 Thanks goes to these wonderful people :
 
