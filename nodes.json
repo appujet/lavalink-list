@@ -176,8 +176,8 @@
         "port": 27185,
         "password": "Lavalinkhoster123",
         "secure": false,
-        "authorId": "701145215888523276",
-        "restVersion": "v4"
+        "restVersion": "v4",
+        "authorId": "701145215888523276"
     },
     {
         "identifier": "NYC Lavalink",
@@ -185,8 +185,8 @@
         "port": 4000,
         "password": "youshallnotpass",
         "secure": false,
-        "restVersion": "v4"
-        "authorId": "843536174726512642",
+        "restVersion": "v4",
+        "authorId": "843536174726512642"
     },
     {
         "identifier": "Amane - v3 SSL",
@@ -239,8 +239,8 @@
         "port": 5768,
         "password": "youshallnotpass",
         "secure": false,
-        "restVersion": "v3"
-        "authorId": "878821057748926534",
+        "restVersion": "v3",
+        "authorId": "878821057748926534"
     },
     {
         "identifier": "Naig Node - 01",
@@ -248,8 +248,8 @@
         "port": 2005,
         "password": "NAIGLAVA-dash.techbyte.host",
         "secure": false,
-        "restVersion": "v4"
-        "authorId": "573709909594734603",
+        "restVersion": "v4",
+        "authorId": "573709909594734603"
     },
     {
         "identifier": "Korea Node V3",
