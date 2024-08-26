@@ -10,14 +10,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@libsql/client": "^0.6.0",
-    "@prisma/adapter-libsql": "^5.13.0",
-    "@prisma/client": "^5.13.0"
+    "@libsql/client": "^0.9.0",
+    "@prisma/adapter-libsql": "^5.18.0",
+    "@prisma/client": "^5.18.0"
   },
   "devDependencies": {
-    "@types/node": "^20.12.7",
-    "prisma": "^5.13.0",
+    "@types/node": "^22.5.0",
+    "prisma": "^5.18.0",
     "ts-node": "^10.9.2",
-    "typescript": "^5.4.5"
+    "typescript": "^5.5.4"
   }
 }
