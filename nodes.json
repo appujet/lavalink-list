@@ -243,16 +243,7 @@
         "authorId": "573709909594734603"
     },
     {
-        "identifier": "Korea Node V3",
-        "host": "hwangsihu.ddns.net",
-        "port": 2332,
-        "password": "youshallnotpass",
-        "secure": false,
-        "restVersion": "v3",
-        "authorId": "960028313525583903"
-    },
-    {
-        "identifier": "Korea Node V4",
+        "identifier": "Korea Node",
         "host": "hwangsihu.ddns.net",
         "port": 2333,
         "password": "youshallnotpass",
