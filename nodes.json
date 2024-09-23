@@ -108,12 +108,12 @@
         "authorId": "217993049802801152"
     },
     {
-        "identifier": "INZEWORLD-NODE (RU)",
-        "host": "85.88.163.80",
+        "identifier": "INZEWORLD.COM (DE)",
+        "host": "lava.inzeworld.com",
         "port": 3128,
         "password": "saher.inzeworld.com",
         "secure": false,
-        "restVersion": "v3",
+        "restVersion": "v4",
         "authorId": "454863447344021515"
     },
     {
