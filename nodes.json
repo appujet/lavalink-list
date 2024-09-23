@@ -72,6 +72,15 @@
         "authorId": "885731228874051624"
     },
     {
+        "identifier": "LewdHuTao - Lavalink",
+        "host": "node.lewdhutao.my.eu.org",
+        "port": 80,
+        "password": "youshallnotpass",
+        "secure": false,
+        "restVersion": "v4",
+        "authorId": "454278022132924417"
+    },
+    {
         "identifier": "Creavite US1 Lavalink",
         "host": "us1.lavalink.creavite.co",
         "port": 20080,
