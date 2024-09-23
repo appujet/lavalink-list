@@ -286,5 +286,14 @@
         "secure": false,
         "restVersion": "v4",
         "authorId": "960028313525583903"
+    },
+    {
+        "identifier": "Koi Node V3",
+        "host": "nodev1.fypmoon.org",
+        "port": 1164,
+        "password": "fypmoon.org",
+        "secure": false,
+        "restVersion": "v3",
+        "authorId": "1138138158949732483"
     }
 ]
