@@ -1,8 +1,8 @@
 [
     {
         "identifier": "US",
-        "host": "us.itzrandom.cloud",
-        "port": 9005,
+        "host": "node.itzrandom.cloud",
+        "port": 9000,
         "password": "lavalink@itzrandomcloud",
         "secure": false,
         "restVersion": "v4",
