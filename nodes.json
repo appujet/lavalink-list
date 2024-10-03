@@ -1,5 +1,14 @@
 [
     {
+        "identifier": "US",
+        "host": "node.itzrandom.cloud",
+        "port": 9000,
+        "password": "lavalink@itzrandomcloud",
+        "secure": false,
+        "restVersion": "v4",
+        "authorId": "878975596623986700"
+    },
+    {
         "identifier": "Elf Lights.out.",
         "host": "lavalink4.theelf.tech",
         "port": 25577,
