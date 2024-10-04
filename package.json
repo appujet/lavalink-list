@@ -12,7 +12,8 @@
   "dependencies": {
     "@libsql/client": "^0.8.0",
     "@prisma/adapter-libsql": "^5.18.0",
-    "@prisma/client": "^5.18.0"
+    "@prisma/client": "^5.18.0",
+    "dotenv": "^16.4.5"
   },
   "devDependencies": {
     "@types/node": "^22.5.0",

@@ -2,6 +2,7 @@ const fs = require('fs');
 const { PrismaClient } = require('@prisma/client');
 const { PrismaLibSQL } = require('@prisma/adapter-libsql');
 const { createClient } = require('@libsql/client');
+require('dotenv').config();
 
 const libsql = createClient({
     url: process.env.TURSO_DATABASE_URL || '',
