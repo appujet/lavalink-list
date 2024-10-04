@@ -1,7 +1,7 @@
-import * as fs from 'fs';
-import { PrismaClient } from '@prisma/client';
-import { PrismaLibSQL } from "@prisma/adapter-libsql";
-import { createClient } from "@libsql/client";
+const fs = require('fs');
+const { PrismaClient } = require('@prisma/client');
+const { PrismaLibSQL } = require('@prisma/adapter-libsql');
+const { createClient } = require('@libsql/client');
 
 const libsql = createClient({
     url: process.env.TURSO_DATABASE_URL || '',
