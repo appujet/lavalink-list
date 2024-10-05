@@ -18,15 +18,6 @@
         "authorId": "612666923502796818"
     },
     {
-        "identifier": "Elf Lights.out.",
-        "host": "lavalink3.theelf.tech",
-        "port": 50050,
-        "password": "discord.gg/PqVQgXTweC",
-        "secure": false,
-        "restVersion": "v3",
-        "authorId": "612666923502796818"
-    },
-    {
         "identifier": "MYHM.Space",
         "host": "ll3.myhm.space",
         "port": 443,
