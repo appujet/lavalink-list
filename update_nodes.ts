@@ -1,15 +1,13 @@
 const fs = require('fs');
-const { PrismaClient } = require('@prisma/client');
-const { PrismaLibSQL } = require('@prisma/adapter-libsql');
 const { createClient } = require('@libsql/client');
 require('dotenv').config();
 
+// Initialize the libsql client
 const libsql = createClient({
     url: process.env.TURSO_DATABASE_URL || '',
     authToken: process.env.TURSO_AUTH_TOKEN,
 });
 
-const adapter = new PrismaLibSQL(libsql);
 // Define types for node objects
 interface Node {
     host: string;
@@ -37,12 +35,12 @@ function removeDuplicates(data: Node[]): Node[] {
 
 // Function to add restVersion if it is missing
 function addRestVersion(data: Node[]): Node[] {
-    for (const node of data) {
+    return data.map(node => {
         if (!node.restVersion) {
             node.restVersion = 'v4';
         }
-    }
-    return data;
+        return node;
+    });
 }
 
 // Load data from nodes.json
@@ -67,18 +65,28 @@ if (uniqueData.length < data.length) {
 // Update database with unique nodes
 async function updateNodes(nodes: Node[]): Promise<void> {
     console.log("Updating nodes in database...");
-    const prisma = new PrismaClient({ adapter });
-    await prisma.$connect();
-    // delete all nodes
-    await prisma.nodes.deleteMany();
-    // create new nodes
 
-    await prisma.nodes.createMany({
-        data: {
-            nodes: JSON.stringify(nodes)
-        }
-    });
-    await prisma.$disconnect();
+    try {
+        // Delete all nodes
+        await libsql.execute("DELETE FROM Node");
+
+        // Create an array of placeholders and values for batch insert
+        const placeholders = nodes.map(() => '(?, ?, ?, ?, ?, ?, ?)').join(',');
+        const values = nodes.flatMap(node => [
+            node.host,
+            node.identifier,
+            node.password,
+            node.port,
+            node.restVersion,
+            node.secure,
+            node.authorId,
+        ]);
+
+        // Insert new nodes in one query
+        await libsql.execute(`INSERT INTO Node (host, identifier, password, port, restVersion, secure, authorId) VALUES ${placeholders}`, values);
+    } catch (error) {
+        console.error("Error updating nodes:", error);
+    }
 }
 
 // Call updateNodes with uniqueData

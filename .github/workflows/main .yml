@@ -24,14 +24,10 @@ jobs:
       - name: Install Dependencies
         run: yarn install
 
-      - name: Generate Prisma Client
-        run: npx prisma generate
-
       - name: Run TypeScript Script
         env:
           TURSO_DATABASE_URL: ${{ secrets.TURSO_DATABASE_URL }}
           TURSO_AUTH_TOKEN: ${{ secrets.TURSO_AUTH_TOKEN }}
-          DATABASE_URL: ${{ secrets.DATABASE_URL }}
         run: yarn start
 
       - name: Commit Changes
