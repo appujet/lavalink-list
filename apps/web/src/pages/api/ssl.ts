@@ -8,7 +8,7 @@ import { fetch } from 'undici';
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     
     try {
-        const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+        const apiUrl = "https://lavainfo-api.deno.dev";
 
         if (!apiUrl) {
             throw new Error('API URL is not defined in the environment variables.');
