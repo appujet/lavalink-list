@@ -84,7 +84,7 @@
     {
         "identifier": "Catfein",
         "host": "lava.catfein.com",
-        "port": 4000,
+        "port": 5000,
         "password": "catfein",
         "secure": false,
         "restVersion": "v4",
@@ -272,11 +272,20 @@
     },
     {
         "identifier": "Koi Node V3",
-        "host": "nodev1.fypmoon.org",
+        "host": "nodev3.fypmoon.org",
         "port": 1164,
         "password": "fypmoon.org",
         "secure": false,
         "restVersion": "v3",
-        "authorId": "1138138158949732483"
+        "authorId": "886971572668219392"
+    },
+    {
+        "identifier": "Koi Node V4",
+        "host": "nodev4.fypmoon.org",
+        "port": 1118,
+        "password": "fypmoon.org",
+        "secure": false,
+        "restVersion": "v4",
+        "authorId": "886971572668219392"
     }
 ]
