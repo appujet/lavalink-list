@@ -5,7 +5,7 @@
 
 <!-- jumbotron with links -->
 <div align="center">
-  <a href="https://lavainfo.netlify.app/">
+  <a href="https://lavalinks-list.vercel.app/">
     <img src="https://raw.githubusercontent.com/appujet/lavalink-list/main/assets/logo.png" alt="logo" width="80" height="80">
   </a>
   <h3 align="center">Lavalink list</h3>
