@@ -4,7 +4,8 @@ on:
   push:
     branches:
       - main
-
+    paths:
+      - 'nodes.json'
 jobs:
   remove_duplicates:
     runs-on: ubuntu-latest
