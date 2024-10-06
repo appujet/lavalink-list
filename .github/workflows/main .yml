@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - main
-    paths:
-      - 'nodes.json'  # Trigger only when this file is modified
 
 jobs:
   remove_duplicates:
@@ -17,8 +15,8 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
-      - name: Install Node.js and pnpm
-        uses: actions/setup-node@v4
+      - run: corepack enable
+      - uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: "pnpm"
