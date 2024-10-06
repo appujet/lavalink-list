@@ -47,7 +47,7 @@ function addRestVersion(data: Node[]): Node[] {
 }
 
 // Load data from nodes.json
-const data: Node[] = JSON.parse(fs.readFileSync('nodes.json', 'utf8'));
+const data: Node[] = JSON.parse(fs.readFileSync('../../nodes.json', 'utf8'));
 
 // Add restVersion if it is missing
 const dataWithRestVersion = addRestVersion(data);
@@ -60,7 +60,7 @@ if (uniqueData.length < data.length) {
     console.log("Duplicate nodes removed.");
 
     // Save updated data back to nodes.json
-    fs.writeFileSync('nodes.json', JSON.stringify(uniqueData, null, 4));
+    fs.writeFileSync('../../nodes.json', JSON.stringify(uniqueData, null, 4));
 } else {
     console.log("No duplicate nodes found.");
 }
