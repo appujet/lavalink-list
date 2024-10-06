@@ -83,7 +83,7 @@
     {
         "identifier": "Catfein",
         "host": "lava.catfein.com",
-        "port": 5000,
+        "port": 4000,
         "password": "catfein",
         "secure": false,
         "restVersion": "v4",
