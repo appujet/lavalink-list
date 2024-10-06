@@ -1,6 +1,3 @@
 [submodule "lavalink-api"]
 	path = apps/api
 	url = https://github.com/appujet/lavalink-api.git
-[submodule "apps/api"]
-	path = apps/api
-	url = https://github.com/appujet/lavalink-api.git

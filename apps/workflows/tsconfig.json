@@ -1,0 +1,6 @@
+{
+  "extends": "@appu/typescript-config/base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+  }
+}

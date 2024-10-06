@@ -1,0 +1,20 @@
+{
+  "name": "workflows",
+  "version": "0.0.0",
+  "private": true,
+  "main": "dist/update_nodes.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/update_nodes.js"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.8.1",
+    "dotenv": "^16.4.5",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@appu/typescript-config": "workspace:*",
+    "@types/node": "^22.5.0"
+  }
+}
