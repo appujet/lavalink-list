@@ -1,4 +1,4 @@
-import fs from 'fs';
+import fs from 'node:fs';
 import { createClient } from '@libsql/client';
 import dotenv from 'dotenv';
 
@@ -64,21 +64,57 @@ if (uniqueData.length < data.length) {
 } else {
     console.log("No duplicate nodes found.");
 }
-
 // Update database with unique nodes
 async function updateNodes(nodes: Node[]): Promise<void> {
-    console.log("Updating nodes in database...");
+    console.log("Updating nodes in the database...");
 
     try {
-        // Delete all nodes
-        await libsql.execute("DELETE FROM Node");
+        // Retrieve all existing nodes from the database
+        const existingNodesResult = await libsql.execute("SELECT identifier FROM Node");
+        const existingNodes = existingNodesResult.rows.map((row: any) => row.identifier);
+       
+        // Prepare the queries for inserting or updating nodes
+        const queries: string[] = [];
+        const jsonIdentifiers = nodes.map((node) => node.identifier);
 
-        // Insert new nodes in one query
-        await libsql.execute(`INSERT INTO Node (host, identifier, password, port, restVersion, secure, authorId)  VALUES ${nodes.map(node => `('${node.host}', '${node.identifier}', '${node.password}', ${node.port}, '${node.restVersion}', ${node.secure}, '${node.authorId}')`).join(', ')}`);
+        for (const node of nodes) {
+            const { host, identifier, password, port, restVersion, secure, authorId } = node;
+            const values = `('${host}', '${identifier}', '${password}', ${port}, '${restVersion}', ${secure}, '${authorId}')`;
+
+            // Use an UPSERT query to handle conflicts on the unique 'identifier' field
+            const query = `
+                INSERT INTO Node (host, identifier, password, port, restVersion, secure, authorId)
+                VALUES ${values}
+                ON CONFLICT (identifier) 
+                DO UPDATE SET
+                    host = EXCLUDED.host,
+                    password = EXCLUDED.password,
+                    port = EXCLUDED.port,
+                    restVersion = EXCLUDED.restVersion,
+                    secure = EXCLUDED.secure,
+                    authorId = EXCLUDED.authorId;
+            `;
+            queries.push(query);
+        }
+
+        // Execute all the insert or update queries
+        for (const query of queries) {
+            await libsql.execute(query);
+        }
+
+        // Find the nodes that exist in the database but not in the JSON input, and delete them
+        const nodesToDelete = existingNodes.filter((identifier) => !jsonIdentifiers.includes(identifier));
+    
+        if (nodesToDelete.length > 0) {
+            const deleteQuery = `DELETE FROM Node WHERE identifier IN (${nodesToDelete.map((id) => `'${id}'`).join(', ')})`;
+            await libsql.execute(deleteQuery);
+            console.log(`Removed nodes: ${nodesToDelete.join(', ')}`);
+        }
     } catch (error) {
         console.error("Error updating nodes:", error);
     }
 }
+
 
 // Call updateNodes with uniqueData
 updateNodes(uniqueData)
