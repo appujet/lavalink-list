@@ -1,0 +1,39 @@
+name: Update Nodes
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  remove_duplicates:
+    runs-on: ubuntu-latest
+
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Install Node.js and Yarn
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18'
+          registry-url: 'https://registry.yarnpkg.com/'
+
+      - name: Install Dependencies
+        run: yarn install
+
+      - name: Run TypeScript Script
+        env:
+          TURSO_DATABASE_URL: ${{ secrets.TURSO_DATABASE_URL }}
+          TURSO_AUTH_TOKEN: ${{ secrets.TURSO_AUTH_TOKEN }}
+        run: yarn start
+
+      - name: Commit Changes
+        run: |
+          git config --global user.email "github-actions@users.noreply.github.com"
+          git config --global user.name "GitHub Actions"
+          git add .
+          git diff-index --quiet HEAD || git commit -m "Update Nodes"
+          git push
