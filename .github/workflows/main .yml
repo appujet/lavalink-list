@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'nodes.json'  # Trigger only when this file is modified
 
 jobs:
   remove_duplicates:
@@ -15,25 +17,33 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
-      - name: Install Node.js and Yarn
-        uses: actions/setup-node@v2
+      - name: Install Node.js and pnpm
+        uses: actions/setup-node@v4
         with:
-          node-version: '18'
-          registry-url: 'https://registry.yarnpkg.com/'
+          node-version: 20
+          cache: "pnpm"
 
-      - name: Install Dependencies
-        run: yarn install
+      - name: Change Directory to apps/workflows
+        working-directory: apps/workflows  # Set the working directory to apps/workflows
+        run: |
+          pnpm install
+
+      - name: Build
+        working-directory: apps/workflows  # Ensure we're building in the correct directory
+        run: pnpm build
 
       - name: Run TypeScript Script
+        working-directory: apps/workflows
         env:
           TURSO_DATABASE_URL: ${{ secrets.TURSO_DATABASE_URL }}
           TURSO_AUTH_TOKEN: ${{ secrets.TURSO_AUTH_TOKEN }}
-        run: yarn start
+        run: pnpm start
 
-      - name: Commit Changes
+      - name: Commit Changes to nodes.json
+        working-directory: apps/workflows
         run: |
           git config --global user.email "github-actions@users.noreply.github.com"
           git config --global user.name "GitHub Actions"
-          git add .
+          git add nodes.json  # Add the modified file to the commit
           git diff-index --quiet HEAD || git commit -m "Update Nodes"
           git push
