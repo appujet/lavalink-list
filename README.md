@@ -1,81 +1,84 @@
-# Turborepo starter
+[![Contributors][contributors-shield]][contributors-url]
+[![Issues][issues-shield]][issues-url]
+[![Forks][forks-shield]][forks-url]
+[![Stars][stars-shield]][stars-url]
 
-This is an official starter Turborepo.
+<!-- jumbotron with links -->
+<div align="center">
+  <a href="https://lavainfo.netlify.app/">
+    <img src="https://raw.githubusercontent.com/appujet/lavalink-list/main/assets/logo.png" alt="logo" width="80" height="80">
+  </a>
+  <h3 align="center">Lavalink list</h3>
+  <p align="center">
+    A list of free and available public Lavalink nodes with their live status. Feel free to make a pull request!
+    <br />
+    <br />
+    <a href="https://lavainfo.netlify.app/">View Website</a>
+    .
+    <a href="https://github.com/appujet/lavalink-list/pulls">Make a pull request</a>
+    ·
+    <a href="https://discord.gg/uRJD4XBPes">Support Server</a>
+  </p>
+</div>
 
-## Using this example
+<!-- website preview using i frames -->
+<div style="overflow-x: auto; white-space: nowrap;">
+  <img src="https://raw.githubusercontent.com/appujet/lavalink-list/main/assets/non-ssl.png" alt="preview" width="400">
+  <img src="https://raw.githubusercontent.com/appujet/lavalink-list/main/assets/ssl.png" alt="preview" width="400">
+  <img src="https://raw.githubusercontent.com/appujet/lavalink-list/main/assets/faq.png" alt="preview" width="400">
+  <img src="https://raw.githubusercontent.com/appujet/lavalink-list/main/assets/home.png" alt="preview" width="400">
+</div>
 
-Run the following command:
+### To Setup a Lavalink server on Windows, Linux, or Replit, [Click Here.](https://github.com/LucasB25/lavalink-server)
 
-```sh
-npx create-turbo@latest
+<!-- how to add my node -->
+## How to add my node?
+
+1. Fork this repository
+2. Edit the `nodes.json` file and add your node
+3. Create a pull request
+<!-- nodes.json example -->
+## `nodes.json` example
+
+```json
+{
+ [
+    {
+        "identifier": "my-node",
+        "host": "lava1.example.com",
+        "port": 2333,
+        "password": "example.com",
+        "secure": false,
+        "restVersion": "v3",
+        "authorId": "959276033683628122"
+    }
+  ]
+}
 ```
 
-## What's inside?
+- `identifier` - The identifier of your node (example: my-node)
+- `host` - The host of your node (example: lava1.example.com)
+- `port` - The port of your node (default: 2333)
+- `password` - The password of your node (if you have one)
+- `secure` - If your node is using SSL (true or false)
+- `restVersion` - The version of your node (lavalink rest api version) (v3 or v4)
+- `authorId` - Your User Discord ID (To get your avatar, name and tag foe display in the list)
 
-This Turborepo includes the following packages/apps:
+## Contributers
 
-### Apps and Packages
+Thanks goes to these wonderful people :
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+<a href="https://github.com/appujet/lavalink-list/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=appujet/lavalink-list" alt="contributors" width="500" />
+</a>
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+<!-- links -->
+[contributors-shield]: https://img.shields.io/github/contributors/appujet/lavalink-list.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/appujet/lavalink-list.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/appujet/lavalink-list.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/appujet/lavalink-list.svg?style=for-the-badge
 
-### Utilities
-
-This Turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-### Build
-
-To build all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm build
-```
-
-### Develop
-
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm dev
-```
-
-### Remote Caching
-
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-npx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+[contributors-url]: https://github.com/appujet/lavalink-list/graphs/contributors
+[issues-url]:  https://github.com/appujet/lavalink-list/issues
+[forks-url]:  https://github.com/appujet/lavalink-list/network/members
+[stars-url]:  https://github.com/appujet/lavalink-list/stargazers
