@@ -251,5 +251,14 @@
         "secure": false,
         "restVersion": "v4",
         "authorId": "886971572668219392"
+    },
+    {
+        "identifier": "Yamikuro-node. [TH]",
+        "host": "th-01.yamikurostd.xyz",
+        "port": 1029,
+        "password": "yamikuro.studio.th",
+        "secure": false,
+        "restVersion": "v4",
+        "authorId": "338502866148917249"
     }
 ]
