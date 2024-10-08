@@ -1,24 +1,33 @@
-name: Deploy to Vercel on Release
+name: Vercel Production Deployment
+
+env:
+  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
 
 on:
   release:
-    types: [created] # Triggers the workflow when a release is created
+    types: [created]
 
 jobs:
-  deploy:
+  Deploy-Production:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Code
-      uses: actions/checkout@v4
+      # Checkout the repository code
+      - uses: actions/checkout@v2
 
-    - name: Install Vercel CLI
-      run: npm install -g vercel
+      # Install the latest version of Vercel CLI
+      - name: Install Vercel CLI
+        run: npm install --global vercel@latest
 
-    - name: Deploy to Vercel
-      env:
-        VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }} # Vercel token for authentication
-        VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }} # Your Vercel project ID
-        VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }} # Your Vercel organization ID (if applicable)
-      run: vercel --prod --yes
-      
+      # Pull Vercel environment information for production
+      - name: Pull Vercel Environment Information
+        run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+
+      # Build the project
+      - name: Build Project Artifacts
+        run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
+
+      # Deploy the project using the prebuilt artifacts
+      - name: Deploy Project Artifacts to Vercel
+        run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}
