@@ -199,42 +199,6 @@
         "authorId": "843536174726512642"
     },
     {
-        "identifier": "Amane - v3 SSL",
-        "host": "lavalink.serenetia.com",
-        "port": 443,
-        "password": "lavalinkv3",
-        "secure": true,
-        "restVersion": "v3",
-        "authorId": "334307216926703616"
-    },
-    {
-        "identifier": "Amane - v4 SSL",
-        "host": "lavalinkv4.serenetia.com",
-        "port": 443,
-        "password": "lavalinkv4",
-        "secure": true,
-        "restVersion": "v4",
-        "authorId": "334307216926703616"
-    },
-    {
-        "identifier": "Amane - v3 No SSL",
-        "host": "lavalink.serenetia.com",
-        "port": 80,
-        "password": "lavalinkv3",
-        "secure": false,
-        "restVersion": "v3",
-        "authorId": "334307216926703616"
-    },
-    {
-        "identifier": "Amane - v4 No SSL",
-        "host": "lavalinkv4.serenetia.com",
-        "port": 80,
-        "password": "lavalinkv4",
-        "secure": false,
-        "restVersion": "v4",
-        "authorId": "334307216926703616"
-    },
-    {
         "identifier": "Karta Dharta",
         "host": "node1.kartadharta.xyz",
         "port": 3000,
