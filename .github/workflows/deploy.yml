@@ -22,6 +22,10 @@ jobs:
           node-version: 20
           cache: 'pnpm'
 
+      # Install pnpm
+      - name: Install pnpm
+        run: npm install -g pnpm
+
       # Install the latest version of Vercel CLI
       - name: Install Vercel CLI
         run: npm install --global vercel@latest
