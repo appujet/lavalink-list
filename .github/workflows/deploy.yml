@@ -14,8 +14,10 @@ jobs:
 
     steps:
       # Checkout the repository code
-      - uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v4
 
+      - run: corepack enable
       # Setup Node.js with pnpm caching
       - uses: actions/setup-node@v4
         with:
