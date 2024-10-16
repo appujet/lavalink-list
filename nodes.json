@@ -12,7 +12,7 @@
         "identifier": "Elf V3 Lights.out.",
         "host": "LavaLink3.lightsout.in",
         "port": 30069,
-        "password": "discord.gg/PqVQgXTweC",
+        "password": "LightsoutBeatsElves",
         "secure": false,
         "restVersion": "v3",
         "authorId": "612666923502796818"
@@ -21,7 +21,7 @@
         "identifier": "Elf V4 Lights.out.",
         "host": "LavaLink4.lightsout.in",
         "port": 40069,
-        "password": "https://dsc.gg/elfmusic",
+        "password": "LightsoutOwnsElves",
         "secure": false,
         "restVersion": "v4",
         "authorId": "612666923502796818"
