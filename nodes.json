@@ -226,15 +226,6 @@
         "authorId": "573709909594734603"
     },
     {
-        "identifier": "Korea Node",
-        "host": "hwangsihu.ddns.net",
-        "port": 2333,
-        "password": "youshallnotpass",
-        "secure": false,
-        "restVersion": "v4",
-        "authorId": "960028313525583903"
-    },
-    {
         "identifier": "Koi Node V3",
         "host": "nodev3.fypmoon.org",
         "port": 1164,
