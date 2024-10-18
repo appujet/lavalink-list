@@ -9,15 +9,23 @@
         "authorId": "878975596623986700"
     },
     {
-        "identifier": "Elf Lights.out.",
-        "host": "lavalink4.theelf.tech",
-        "port": 25577,
-        "password": "https://dsc.gg/elfmusic",
+        "identifier": "Elf V3 Lights.out.",
+        "host": "LavaLink3.lightsout.in",
+        "port": 30069,
+        "password": "LightsoutBeatsElves",
+        "secure": false,
+        "restVersion": "v3",
+        "authorId": "612666923502796818"
+    },
+    {
+        "identifier": "Elf V4 Lights.out.",
+        "host": "LavaLink4.lightsout.in",
+        "port": 40069,
+        "password": "LightsoutOwnsElves",
         "secure": false,
         "restVersion": "v4",
         "authorId": "612666923502796818"
     },
-    
     {
         "identifier": "MYHM.Space",
         "host": "ll3.myhm.space",
