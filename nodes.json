@@ -90,11 +90,20 @@
         "authorId": "867303900884893727"
     },
     {
-        "identifier": "Catfein",
+        "identifier": "Catfein ID",
         "host": "lava.catfein.com",
         "port": 4000,
         "password": "catfein",
         "secure": false,
+        "restVersion": "v4",
+        "authorId": "885731228874051624"
+    },
+    {
+        "identifier": "Catfein DE",
+        "host": "lavalink.alfari.id",
+        "port": 443,
+        "password": "catfein",
+        "secure": true,
         "restVersion": "v4",
         "authorId": "885731228874051624"
     },
