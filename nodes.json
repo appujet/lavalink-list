@@ -9,6 +9,24 @@
         "authorId": "878975596623986700"
     },
     {
+        "identifier": "ApexNodes v3",
+        "host": "v3.bloggertasher.ru",
+        "port": 25049,
+        "password": "apexnodes.xyz",
+        "secure": false,
+        "restVersion": "v3",
+        "authorId": "629757042684592140"
+    },
+    {
+        "identifier": "ApexNodes v4",
+        "host": "v4.bloggertasher.ru",
+        "port": 25040,
+        "password": "apexnodes.xyz",
+        "secure": false,
+        "restVersion": "v4",
+        "authorId": "629757042684592140"
+    },
+    {
         "identifier": "Elf V3 Lights.out.",
         "host": "LavaLink3.lightsout.in",
         "port": 30069,
