@@ -29,8 +29,6 @@
   <img src="https://raw.githubusercontent.com/appujet/lavalink-list/main/assets/home.png" alt="preview" width="400">
 </div>
 
-### To Setup a Lavalink server on Windows, Linux, or Replit, [Click Here.](https://github.com/LucasB25/lavalink-server)
-
 <!-- how to add my node -->
 ## How to add my node?
 
