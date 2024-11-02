@@ -262,18 +262,18 @@
     },
     {
         "identifier": "Koi Node V3",
-        "host": "nodev3.fypmoon.org",
+        "host": "lavav3.prplmoe.me",
         "port": 1164,
-        "password": "fypmoon.org",
+        "password": "prplmoe.me",
         "secure": false,
         "restVersion": "v3",
         "authorId": "886971572668219392"
     },
     {
         "identifier": "Koi Node V4",
-        "host": "nodev4.fypmoon.org",
+        "host": "lavav4.prplmoe.me",
         "port": 1118,
-        "password": "fypmoon.org",
+        "password": "prplmoe.me",
         "secure": false,
         "restVersion": "v4",
         "authorId": "886971572668219392"
