@@ -20,7 +20,7 @@
     {
         "identifier": "ApexNodes v4",
         "host": "v4.bloggertasher.ru",
-        "port": 25040,
+        "port": 26040,
         "password": "apexnodes.xyz",
         "secure": false,
         "restVersion": "v4",
