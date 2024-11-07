@@ -252,9 +252,9 @@
         "authorId": "878821057748926534"
     },
     {
-        "identifier": "Naig Node - 01",
-        "host": "lavalink01.techbyte.host",
-        "port": 2036,
+        "identifier": "ChalresNaig Node",
+        "host": " lavahatry4.techbyte.host",
+        "port": 3000,
         "password": "NAIGLAVA-dash.techbyte.host",
         "secure": false,
         "restVersion": "v4",
