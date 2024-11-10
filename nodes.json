@@ -261,6 +261,15 @@
         "authorId": "573709909594734603"
     },
     {
+        "identifier": "ChalresNaig Node (Backup)",
+        "host": "212.227.65.132",
+        "port": 10296,
+        "password": "charlesnaig-lavalink",
+        "secure": false,
+        "restVersion": "v4",
+        "authorId": "573709909594734603"
+    },
+    {
         "identifier": "Koi Node V3",
         "host": "lavav3.prplmoe.me",
         "port": 1164,
