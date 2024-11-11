@@ -298,7 +298,7 @@
     }, 
     {
         "identifier": "Germany",
-        "host": "fn1.solarnode.xyz:2087",
+        "host": "fn1.solarnode.xyz",
         "port": 2087,
         "password": "solarnode.xyz",
         "secure": false,
