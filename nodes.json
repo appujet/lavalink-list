@@ -295,5 +295,15 @@
         "secure": false,
         "restVersion": "v4",
         "authorId": "338502866148917249"
+    }, 
+    {
+        "identifier": "Germany",
+        "host": "fn1.solarnode.xyz:2087",
+        "port": 2087,
+        "password": "solarnode.xyz",
+        "secure": false,
+        "restVersion": "v4",
+        "authorId": "1186375223583440967"
     }
 ]
+
