@@ -253,9 +253,18 @@
     },
     {
         "identifier": "ChalresNaig Node",
-        "host": " lavahatry4.techbyte.host",
+        "host": "lavahatry4.techbyte.host",
         "port": 3000,
         "password": "NAIGLAVA-dash.techbyte.host",
+        "secure": false,
+        "restVersion": "v4",
+        "authorId": "573709909594734603"
+    },
+    {
+        "identifier": "ChalresNaig Node (Backup)",
+        "host": "212.227.65.132",
+        "port": 10296,
+        "password": "charlesnaig-lavalink",
         "secure": false,
         "restVersion": "v4",
         "authorId": "573709909594734603"
