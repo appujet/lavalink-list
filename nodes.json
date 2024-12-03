@@ -170,5 +170,14 @@
         "restVersion": "v4",
         "authorId": "1186375223583440967"
     }
+    {
+        "identifier": "br0kE's Lavalink v4 Node",
+        "host": "lavalink.pct.lol",
+        "port": 8080,
+        "password": "br0k3lava4_server",
+        "secure": true,
+        "restVersion": "v4",
+        "authorId": "1041976160961183764"
+    }
 ]
 
