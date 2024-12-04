@@ -117,15 +117,6 @@
         "authorId": "573709909594734603"
     },
     {
-        "identifier": "Koi Node V3",
-        "host": "lavav3.prplmoe.me",
-        "port": 1164,
-        "password": "prplmoe.me",
-        "secure": false,
-        "restVersion": "v3",
-        "authorId": "886971572668219392"
-    },
-    {
         "identifier": "USA",
         "host": "badass.kalamii.net",
         "port": 8170,
