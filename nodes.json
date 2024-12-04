@@ -27,24 +27,6 @@
         "authorId": "629757042684592140"
     },
     {
-        "identifier": "Elf V3 Lights.out.",
-        "host": "LavaLink3.lightsout.in",
-        "port": 30069,
-        "password": "LightsoutBeatsElves",
-        "secure": false,
-        "restVersion": "v3",
-        "authorId": "612666923502796818"
-    },
-    {
-        "identifier": "Elf V4 Lights.out.",
-        "host": "LavaLink4.lightsout.in",
-        "port": 40069,
-        "password": "LightsoutOwnsElves",
-        "secure": false,
-        "restVersion": "v4",
-        "authorId": "612666923502796818"
-    },
-    {
         "identifier": "MYHM.Space",
         "host": "ll3.myhm.space",
         "port": 443,
@@ -135,33 +117,6 @@
         "authorId": "573709909594734603"
     },
     {
-        "identifier": "Koi Node V3",
-        "host": "lavav3.prplmoe.me",
-        "port": 1164,
-        "password": "prplmoe.me",
-        "secure": false,
-        "restVersion": "v3",
-        "authorId": "886971572668219392"
-    },
-    {
-        "identifier": "Koi Node V4",
-        "host": "lavav4.prplmoe.me",
-        "port": 1118,
-        "password": "prplmoe.me",
-        "secure": false,
-        "restVersion": "v4",
-        "authorId": "886971572668219392"
-    },
-    {
-        "identifier": "Germany",
-        "host": "fn1.solarnode.xyz",
-        "port": 2087,
-        "password": "solarnode.xyz",
-        "secure": false,
-        "restVersion": "v4",
-        "authorId": "1186375223583440967"
-    }, 
-    {
         "identifier": "USA",
         "host": "badass.kalamii.net",
         "port": 8170,
@@ -169,7 +124,7 @@
         "secure": false,
         "restVersion": "v4",
         "authorId": "1186375223583440967"
-    }
+    },
     {
         "identifier": "br0kE's Lavalink v4 Node",
         "host": "lavalink.pct.lol",
