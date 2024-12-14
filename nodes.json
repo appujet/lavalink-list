@@ -151,6 +151,15 @@
         "secure": true,
         "restVersion": "v4",
         "authorId": "1041976160961183764"
+    },
+    {
+        "identifier": "4Kep",
+        "host": "zetzy.xyz",
+        "port": 2333,
+        "password": "4KepBot",
+        "secure": false,
+        "restVersion": "v4",
+        "authorId": "938443713527545966"
     }
 ]
 
