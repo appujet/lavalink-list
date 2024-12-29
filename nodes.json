@@ -18,6 +18,60 @@
         "authorId": "867303900884893727"
     },
     {
+        "identifier": "Muzykant v3 SSL",
+        "host": "lavalink_v3.muzykant.xyz",
+        "port": 443,
+        "password": "https://discord.gg/v6sdrD9kPh",
+        "secure": true,
+        "restVersion": "v3",
+        "authorId": "719878365640916993"
+    },
+    {
+        "identifier": "Muzykant v3",
+        "host": "lavalink_v3.muzykant.xyz",
+        "port": 80,
+        "password": "https://discord.gg/v6sdrD9kPh",
+        "secure": false,
+        "restVersion": "v3",
+        "authorId": "719878365640916993"
+    },
+    {
+        "identifier": "Muzykant v3 (NO YOUTUBE) SSL",
+        "host": "lavalink_v3_no_yt.muzykant.xyz",
+        "port": 443,
+        "password": "https://discord.gg/v6sdrD9kPh",
+        "secure": true,
+        "restVersion": "v3",
+        "authorId": "719878365640916993"
+    },
+    {
+        "identifier": "Muzykant v3 (NO YOUTUBE)",
+        "host": "lavalink_v3_no_yt.muzykant.xyz",
+        "port": 80,
+        "password": "https://discord.gg/v6sdrD9kPh",
+        "secure": false,
+        "restVersion": "v3",
+        "authorId": "719878365640916993"
+    },
+    {
+        "identifier": "Muzykant v4 SSL",
+        "host": "lavalink_v4.muzykant.xyz",
+        "port": 443,
+        "password": "https://discord.gg/v6sdrD9kPh",
+        "secure": true,
+        "restVersion": "v4",
+        "authorId": "719878365640916993"
+    },
+    {
+        "identifier": "Muzykant v4",
+        "host": "lavalink_v4.muzykant.xyz",
+        "port": 80,
+        "password": "https://discord.gg/v6sdrD9kPh",
+        "secure": false,
+        "restVersion": "v4",
+        "authorId": "719878365640916993"
+    },
+    {
         "identifier": "US",
         "host": "node.itzrandom.cloud",
         "port": 9000,
