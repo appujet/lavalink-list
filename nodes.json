@@ -1,5 +1,14 @@
 [
     {
+        "identifier": "DivaHost",
+        "host": "lavalink.divahost.net",
+        "port": 60002,
+        "password": "divahostv4",
+        "secure": false,
+        "restVersion": "v4",
+        "authorId": "1252001166703853588"
+    },
+    {
         "identifier": "Public Lavalink v4",
         "host": "lava-v4.ajieblogs.eu.org",
         "port": 443,
@@ -216,4 +225,3 @@
         "authorId": "938443713527545966"
     }
 ]
-
