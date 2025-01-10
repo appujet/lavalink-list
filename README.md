@@ -5,7 +5,7 @@
 
 <!-- jumbotron with links -->
 <div align="center">
-  <a href="https://lavalinks-list.vercel.app/">
+  <a href="https://lavalink.appujet.site/">
     <img src="https://raw.githubusercontent.com/appujet/lavalink-list/main/assets/logo.png" alt="logo" width="80" height="80">
   </a>
   <h3 align="center">Lavalink list</h3>
@@ -13,7 +13,7 @@
     A list of free and available public Lavalink nodes with their live status. Feel free to make a pull request!
     <br />
     <br />
-    <a href="https://lavalinks-list.vercel.app/">View Website</a>
+    <a href="https://lavalink.appujet.site/">View Website</a>
     .
     <a href="https://github.com/appujet/lavalink-list/pulls">Make a pull request</a>
     ·
