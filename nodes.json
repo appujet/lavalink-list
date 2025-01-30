@@ -232,5 +232,14 @@
         "secure": false,
         "restVersion": "v4",
         "authorId": "896607695329693746"
+    },
+    {
+        "identifier": "QuantumHost LAVALINK",
+        "host": "139.99.90.147",
+        "port": 25590,
+        "password": "youshallnotpass",
+        "secure": false,
+        "restVersion": "v3",
+        "authorId": "824864784271802378"
     }
 ]
