@@ -1,5 +1,14 @@
 [
     {
+        "identifier": "DEVenur-LL",
+        "host": "devenur-v4.onlitegix.com",
+        "port": 443,
+        "password": "https://dcserver.link/brasilpokedrink",
+        "secure": true,
+        "restVersion": "v4",
+        "authorId": "853665194463068240"
+    },
+    {
         "identifier": "DivaHost",
         "host": "lavalink.divahost.net",
         "port": 60002,
