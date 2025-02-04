@@ -1,5 +1,14 @@
 [
     {
+        "identifier": "Private Hosting",
+        "host": "18.209.210.50",
+        "port": 25565,
+        "password": "kaligand18",
+        "secure": false,
+        "restVersion": "v4",
+        "authorId": "1300534329402982472"
+    },
+    {
         "identifier": "DivaHost",
         "host": "lavalink.divahost.net",
         "port": 60002,
@@ -243,3 +252,4 @@
         "authorId": "824864784271802378"
     }
 ]
+
