@@ -244,6 +244,13 @@
         "restVersion": "v3",
         "authorId": "824864784271802378"
 
+    },
+    {
+        "identifier": "4tunez_studio",
+        "host": "robinz_lavalink.4tunez.xyz",
+        "port": 2333,
+        "password": "youshallnotpass",
+        "secure": false,
     }
 ]
 
