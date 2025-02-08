@@ -244,6 +244,15 @@
         "restVersion": "v3",
         "authorId": "824864784271802378"
 
+    },
+    {
+        "identifier": "JM Lite LAVALINK",
+        "host": "46.202.82.164",
+        "port": 1027,
+        "password": "jmlitev4",
+        "secure": false,
+        "restVersion": "v4",
+        "authorId": "896607695329693746"
     }
 ]
 
