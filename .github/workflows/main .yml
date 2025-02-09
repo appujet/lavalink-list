@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - 'nodes.json'
+
 jobs:
   remove_duplicates:
     runs-on: ubuntu-latest
@@ -14,21 +15,26 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
-      - run: corepack enable
-      - uses: actions/setup-node@v4
+      - name: Fix Corepack Key Issue
+        run: |
+          corepack disable
+          corepack enable
+          corepack prepare pnpm@latest --activate
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 20.17.0
           cache: "pnpm"
 
-      - name: Change Directory to apps/workflows
-        working-directory: apps/workflows  # Set the working directory to apps/workflows
-        run: |
-          pnpm install
+      - name: Install Dependencies
+        working-directory: apps/workflows
+        run: pnpm install
 
       - name: Build
-        working-directory: apps/workflows  # Ensure we're building in the correct directory
+        working-directory: apps/workflows
         run: pnpm build
 
       - name: Run TypeScript Script
