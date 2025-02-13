@@ -235,6 +235,24 @@
         "secure": false,
         "restVersion": "v4",
         "authorId": "896607695329693746"
+    }, 
+    {
+        "identifier": "UAE - Team",
+        "host": "uae.rhythmosync.shop",
+        "port": 6479,
+        "password": "Kronix",
+        "secure": false,
+        "restVersion": "v4",
+        "authorId": "1186375223583440967"
+    }, 
+    {
+        "identifier": "USA - Team",
+        "host": "lavalink.rhythmosync.shop",
+        "port": 6475,
+        "password": "Kronix",
+        "secure": false,
+        "restVersion": "v4",
+        "authorId": "1186375223583440967"
     }
 ]
 
