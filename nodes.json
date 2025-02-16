@@ -235,6 +235,23 @@
         "secure": false,
         "restVersion": "v4",
         "authorId": "896607695329693746"
+    }, 
+    {
+        "identifier": "Rhythmosync - SSL",
+        "host": "sg-v4.3.rhythmosync.xyz",
+        "port": 443,
+        "password": "rhythmosync.xyz",
+        "secure": true,
+        "restVersion": "v4",
+        "authorId": "1186375223583440967"
+    }, 
+    {
+        "identifier": "Rhythmosync",
+        "host": "sg-v4.3.rhythmosync.xyz",
+        "port": 80,
+        "password": "rhythmosync.xyz",
+        "secure": false,
+        "restVersion": "v4",
+        "authorId": "1186375223583440967"
     }
 ]
-
