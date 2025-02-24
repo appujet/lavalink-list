@@ -189,15 +189,6 @@
         "authorId": "573709909594734603"
     },
     {
-        "identifier": "USA",
-        "host": "badass.kalamii.net",
-        "port": 8170,
-        "password": "jil@11097",
-        "secure": false,
-        "restVersion": "v4",
-        "authorId": "1186375223583440967"
-    },
-    {
         "identifier": "br0kE's Lavalink v4 Node",
         "host": "lavalink.pct.lol",
         "port": 8080,
