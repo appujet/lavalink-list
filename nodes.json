@@ -240,7 +240,7 @@
         "identifier": "Rhythmosync - SSL",
         "host": "lavalink-v4.ffenjil.site",
         "port": 443,
-        "password": "Jil#22",
+        "password": "Kronix",
         "secure": true,
         "restVersion": "v4",
         "authorId": "1186375223583440967"
@@ -249,7 +249,7 @@
         "identifier": "Rhythmosync",
         "host": "lavalink-v4.ffenjil.site",
         "port": 80,
-        "password": "Jil#22",
+        "password": "Kronix",
         "secure": false,
         "restVersion": "v4",
         "authorId": "1186375223583440967"
