@@ -43,7 +43,7 @@ export default function NavBar() {
                         <FontAwesomeIcon icon={faGithub as any} />
                     </Link>
                     <Link
-                        href="https://discord.gg/VP5Hz2HxaT"
+                        href="https://discord.gg/atS9JVKVne"
                         className="flex items-center font-display text-2xl font-bold dark:text-white lg:hover:scale-[1.10] duration-200"
                     >
                         <FontAwesomeIcon icon={faDiscord as any} />
