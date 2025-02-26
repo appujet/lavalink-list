@@ -144,24 +144,6 @@
         "authorId": "867303900884893727"
     },
     {
-        "identifier": "Catfein ID",
-        "host": "lava.catfein.com",
-        "port": 4000,
-        "password": "catfein",
-        "secure": false,
-        "restVersion": "v4",
-        "authorId": "885731228874051624"
-    },
-    {
-        "identifier": "Catfein DE",
-        "host": "lavalink.alfari.id",
-        "port": 443,
-        "password": "catfein",
-        "secure": true,
-        "restVersion": "v4",
-        "authorId": "885731228874051624"
-    },
-    {
         "identifier": "INZEWORLD.COM (DE)",
         "host": "lava.inzeworld.com",
         "port": 3128,
@@ -207,15 +189,6 @@
         "authorId": "573709909594734603"
     },
     {
-        "identifier": "USA",
-        "host": "badass.kalamii.net",
-        "port": 8170,
-        "password": "jil@11097",
-        "secure": false,
-        "restVersion": "v4",
-        "authorId": "1186375223583440967"
-    },
-    {
         "identifier": "br0kE's Lavalink v4 Node",
         "host": "lavalink.pct.lol",
         "port": 8080,
@@ -251,6 +224,77 @@
         "port": 2333,
         "password": "youshallnotpass",
         "secure": false,
+    },
+    {
+        "identifier": "JM Lite LAVALINK",
+        "host": "46.202.82.164",
+        "port": 1027,
+        "password": "jmlitev4",
+        "secure": false,
+        "restVersion": "v4",
+        "authorId": "896607695329693746"
+    }, 
+    {
+        "identifier": "Rhythmosync - SSL",
+        "host": "lavalink-v4.ffenjil.site",
+        "port": 443,
+        "password": "Kronix",
+        "secure": true,
+        "restVersion": "v4",
+        "authorId": "1186375223583440967"
+    }, 
+    {
+        "identifier": "Rhythmosync",
+        "host": "lavalink-v4.ffenjil.site",
+        "port": 80,
+        "password": "Kronix",
+        "secure": false,
+        "restVersion": "v4",
+        "authorId": "1186375223583440967"
+    },
+    {
+        "identifier": "Disutils Team Lavalink 1",
+        "host": "lavalink-1.is-it.pink",
+        "port": 443,
+        "password": "https://disutils.com",
+        "secure": true,
+        "restVersion": "v4",
+        "authorId": "418941954252996609"
+    },
+    {
+        "identifier": "Disutils Team Lavalink 2",
+        "host": "lavalink-2.is-it.pink",
+        "port": 443,
+        "password": "https://disutils.com",
+        "secure": true,
+        "restVersion": "v4",
+        "authorId": "418941954252996609"
+    },
+    {
+        "identifier": "Disutils Team Lavalink 3",
+        "host": "lavalink-3.is-it.pink",
+        "port": 443,
+        "password": "https://disutils.com",
+        "secure": true,
+        "restVersion": "v4",
+        "authorId": "418941954252996609"
+    },
+    {
+        "identifier": "Disutils Team Lavalink 4",
+        "host": "lavalink-4.is-it.pink",
+        "port": 443,
+        "password": "https://disutils.com",
+        "secure": true,
+        "restVersion": "v4",
+        "authorId": "418941954252996609"
+    },
+    {
+        "identifier": "Disutils Team Lavalink 5",
+        "host": "lavalink-5.is-it.pink",
+        "port": 443,
+        "password": "https://disutils.com",
+        "secure": true,
+        "restVersion": "v4",
+        "authorId": "418941954252996609"
     }
 ]
-
