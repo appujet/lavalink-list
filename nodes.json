@@ -205,8 +205,6 @@
         "secure": false,
         "restVersion": "v4",
         "authorId": "938443713527545966"
-
-
     },
     {
         "identifier": "QuantumHost LAVALINK",
@@ -216,14 +214,13 @@
         "secure": false,
         "restVersion": "v3",
         "authorId": "824864784271802378"
-
     },
     {
         "identifier": "4tunez_studio",
         "host": "robinz_lavalink.4tunez.xyz",
         "port": 2333,
         "password": "youshallnotpass",
-        "secure": false,
+        "secure": false
     },
     {
         "identifier": "JM Lite LAVALINK",
@@ -233,7 +230,7 @@
         "secure": false,
         "restVersion": "v4",
         "authorId": "896607695329693746"
-    }, 
+    },
     {
         "identifier": "Rhythmosync - SSL",
         "host": "lavalink-v4.ffenjil.site",
@@ -242,7 +239,7 @@
         "secure": true,
         "restVersion": "v4",
         "authorId": "1186375223583440967"
-    }, 
+    },
     {
         "identifier": "Rhythmosync",
         "host": "lavalink-v4.ffenjil.site",
