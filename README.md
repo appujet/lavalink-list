@@ -17,7 +17,7 @@
     .
     <a href="https://github.com/appujet/lavalink-list/pulls">Make a pull request</a>
     ·
-    <a href="https://discord.gg/uRJD4XBPes">Support Server</a>
+    <a href="https://discord.gg/atS9JVKVne">Support Server</a>
   </p>
 </div>
 
