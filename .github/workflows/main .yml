@@ -17,11 +17,13 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Fix Corepack Key Issue
+      - name: Corepack
         run: |
           corepack disable
+          rm -rf ~/.cache/corepack
+          npm install -g corepack
           corepack enable
-          corepack prepare pnpm@latest --activate
+          corepack prepare pnpm@latest --activate || (corepack enable && corepack prepare pnpm@latest --activate)
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -31,7 +33,7 @@ jobs:
 
       - name: Install Dependencies
         working-directory: apps/workflows
-        run: pnpm install
+        run: pnpm install || (rm -rf node_modules && pnpm install)
 
       - name: Build
         working-directory: apps/workflows
