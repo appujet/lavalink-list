@@ -99,6 +99,15 @@
         "authorId": "878975596623986700"
     },
     {
+        "identifier": "Lavalink V3 SSL",
+        "host": "lava.snowyy.site",
+        "port": 443,
+        "password": "Lava1nk",
+        "secure": true,
+        "restVersion": "v3",
+        "authorId": "1080213687073251461"
+    },
+    {
         "identifier": "ApexNodes v3",
         "host": "v3.bloggertasher.ru",
         "port": 25049,
