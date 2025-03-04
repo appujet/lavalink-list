@@ -302,5 +302,14 @@
         "secure": true,
         "restVersion": "v4",
         "authorId": "418941954252996609"
+    },
+    {
+        "identifier": "LavalinkHub",
+        "host": "69.30.219.178",
+        "port": 9781,
+        "password": "https://discord.gg/VGMhhY7AAD",
+        "secure": false,
+        "restVersion": "v4",
+        "authorId": "548192290003353631"
     }
 ]
