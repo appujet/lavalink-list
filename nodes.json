@@ -1,5 +1,18 @@
 [
     {
+ [
+    {
+        "identifier": "Public Lavalink V4",
+        "host": "utopia.pylex.xyz",
+        "port": 10167,
+        "password": "noise",
+        "secure": false,
+        "restVersion": "v5",
+        "authorId": "959276033683628122"
+    }
+  ]
+}
+    {
         "identifier": "Private Hosting",
         "host": "18.209.210.50",
         "port": 25565,
