@@ -311,5 +311,14 @@
         "secure": false,
         "restVersion": "v4",
         "authorId": "548192290003353631"
+    },
+    {
+        "identifier": "Public Lavalink V4",
+        "host": "utopia.pylex.xyz",
+        "port": 10167,
+        "password": "noise",
+        "secure": false,
+        "restVersion": "v5",
+        "authorId": "1064033717561081856"
     }
 ]
