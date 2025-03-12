@@ -1,6 +1,5 @@
 [
-    {
- [
+  
     {
         "identifier": "Public Lavalink V4",
         "host": "noisemusic.root.sx",
@@ -9,9 +8,7 @@
         "secure": false,
         "restVersion": "v5",
         "authorId": "1064033717561081856"
-    }
-  ]
-}
+    },
     {
         "identifier": "Private Hosting",
         "host": "18.209.210.50",
