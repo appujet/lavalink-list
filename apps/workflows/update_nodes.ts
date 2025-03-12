@@ -35,7 +35,6 @@ function removeDuplicates(data: Node[]): Node[] {
     }
     return uniqueData;
 }
-
 // Function to add restVersion if it is missing
 function addRestVersion(data: Node[]): Node[] {
     return data.map(node => {
@@ -66,25 +65,35 @@ if (uniqueData.length < data.length) {
 }
 // Update database with unique nodes
 async function updateNodes(nodes: Node[]): Promise<void> {
-    console.log("Updating nodes in the database...");
+  console.log("Updating nodes in the database...");
 
-    try {
-        // Retrieve all existing nodes from the database
-        const existingNodesResult = await libsql.execute("SELECT identifier FROM Node");
-        const existingNodes = existingNodesResult.rows.map((row: any) => row.identifier);
-       
-        // Prepare the queries for inserting or updating nodes
-        const queries: string[] = [];
-        const jsonIdentifiers = nodes.map((node) => node.identifier);
+  try {
+    // Retrieve all existing nodes from the database
+    const existingNodesResult = await libsql.execute(
+      "SELECT identifier FROM Node"
+    );
+    const existingNodes = existingNodesResult.rows.map(
+      (row: any) => row.identifier as string
+    );
 
-        for (const node of nodes) {
-            const { host, identifier, password, port, restVersion, secure, authorId } = node;
-            const values = `('${host}', '${identifier}', '${password}', ${port}, '${restVersion}', ${secure}, '${authorId}')`;
+    // Prepare the queries for inserting or updating nodes
+    const jsonIdentifiers = nodes.map((node) => node.identifier);
 
-            // Use an UPSERT query to handle conflicts on the unique 'identifier' field
-            const query = `
+    for (const node of nodes) {
+      const {
+        host,
+        identifier,
+        password,
+        port,
+        restVersion,
+        secure,
+        authorId,
+      } = node;
+
+      // Use parameterized query to prevent SQL injection and handle data types correctly
+      const query = `
                 INSERT INTO Node (host, identifier, password, port, restVersion, secure, authorId)
-                VALUES ${values}
+                VALUES (?, ?, ?, ?, ?, ?, ?)
                 ON CONFLICT (identifier) 
                 DO UPDATE SET
                     host = EXCLUDED.host,
@@ -94,25 +103,37 @@ async function updateNodes(nodes: Node[]): Promise<void> {
                     secure = EXCLUDED.secure,
                     authorId = EXCLUDED.authorId;
             `;
-            queries.push(query);
-        }
 
-        // Execute all the insert or update queries
-        for (const query of queries) {
-            await libsql.execute(query);
-        }
+      // Prepare parameters, converting undefined to null and booleans to 1/0
+      const args = [
+        host,
+        identifier,
+        password ?? null,
+        port ?? null,
+        restVersion ?? "v4", // Ensure restVersion is set
+        secure ? 1 : 0, // Convert boolean to 1 or 0
+        authorId ?? null,
+      ];
 
-        // Find the nodes that exist in the database but not in the JSON input, and delete them
-        const nodesToDelete = existingNodes.filter((identifier) => !jsonIdentifiers.includes(identifier));
-    
-        if (nodesToDelete.length > 0) {
-            const deleteQuery = `DELETE FROM Node WHERE identifier IN (${nodesToDelete.map((id) => `'${id}'`).join(', ')})`;
-            await libsql.execute(deleteQuery);
-            console.log(`Removed nodes: ${nodesToDelete.join(', ')}`);
-        }
-    } catch (error) {
-        console.error("Error updating nodes:", error);
+      await libsql.execute({ sql: query, args });
     }
+
+    // Find nodes to delete (exist in DB but not in JSON)
+    const nodesToDelete = existingNodes.filter(
+      (id) => !jsonIdentifiers.includes(id)
+    );
+
+    if (nodesToDelete.length > 0) {
+      // Use parameterized query for IN clause
+      const placeholders = nodesToDelete.map(() => "?").join(", ");
+      const deleteQuery = `DELETE FROM Node WHERE identifier IN (${placeholders})`;
+      await libsql.execute({ sql: deleteQuery, args: nodesToDelete });
+      console.log(`Removed nodes: ${nodesToDelete.join(", ")}`);
+    }
+  } catch (error) {
+    console.error("Error updating nodes:", error);
+    throw error; // Ensure the error is propagated
+  }
 }
 
 
