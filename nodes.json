@@ -45,6 +45,24 @@
         "authorId": "867303900884893727"
     },
     {
+        "identifier": "Catfein SG",
+        "host": "lava-sg.catfein.co.id",
+        "port": 5000,
+        "password": "catfein",
+        "secure": false,
+        "restVersion": "v4",
+        "authorId": "885731228874051624"
+    },
+    {
+        "identifier": "Catfein US",
+        "host": "lava-us.catfein.co.id",
+        "port": 5000,
+        "password": "catfein",
+        "secure": false,
+        "restVersion": "v4",
+        "authorId": "885731228874051624"
+    },
+    {
         "identifier": "Muzykant v3 SSL",
         "host": "lavalink_v3.muzykant.xyz",
         "port": 443,
