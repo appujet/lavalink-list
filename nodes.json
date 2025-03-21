@@ -338,5 +338,14 @@
         "secure": false,
         "restVersion": "v4",
         "authorId": "548192290003353631"
+    },
+    {
+        "identifier": "Nextgen Coders Public",
+        "host": "publicnode.nextgencoders.xyz",
+        "port": 2336,
+        "password": "nextgencoders",
+        "secure": false,
+        "restVersion": "v4",
+        "authorId": "619756609337425950"
     }
 ]
