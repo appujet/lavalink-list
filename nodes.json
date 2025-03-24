@@ -286,7 +286,7 @@
         "authorId": "1186375223583440967"
     },
     {
-        "identifier": "Disutils Team Lavalink 1",
+        "identifier": "Disutils Team Lavalink 1 (SSL)",
         "host": "lavalink-1.is-it.pink",
         "port": 443,
         "password": "https://disutils.com",
@@ -295,7 +295,16 @@
         "authorId": "418941954252996609"
     },
     {
-        "identifier": "Disutils Team Lavalink 2",
+        "identifier": "Disutils Team Lavalink 1 (Non-SSL)",
+        "host": "lavalink-1-non-ssl.is-it.pink",
+        "port": 80,
+        "password": "https://disutils.com",
+        "secure": false,
+        "restVersion": "v4",
+        "authorId": "418941954252996609"
+    },
+    {
+        "identifier": "Disutils Team Lavalink 2 (SSL)",
         "host": "lavalink-2.is-it.pink",
         "port": 443,
         "password": "https://disutils.com",
@@ -304,7 +313,16 @@
         "authorId": "418941954252996609"
     },
     {
-        "identifier": "Disutils Team Lavalink 3",
+        "identifier": "Disutils Team Lavalink 2 (Non-SSL)",
+        "host": "lavalink-2-non-ssl.is-it.pink",
+        "port": 80,
+        "password": "https://disutils.com",
+        "secure": false,
+        "restVersion": "v4",
+        "authorId": "418941954252996609"
+    },
+    {
+        "identifier": "Disutils Team Lavalink 3 (SSL)",
         "host": "lavalink-3.is-it.pink",
         "port": 443,
         "password": "https://disutils.com",
@@ -313,7 +331,16 @@
         "authorId": "418941954252996609"
     },
     {
-        "identifier": "Disutils Team Lavalink 4",
+        "identifier": "Disutils Team Lavalink 3 (Non-SSL)",
+        "host": "lavalink-3-non-ssl.is-it.pink",
+        "port": 80,
+        "password": "https://disutils.com",
+        "secure": false,
+        "restVersion": "v4",
+        "authorId": "418941954252996609"
+    },
+    {
+        "identifier": "Disutils Team Lavalink 4 (SSL)",
         "host": "lavalink-4.is-it.pink",
         "port": 443,
         "password": "https://disutils.com",
@@ -322,11 +349,29 @@
         "authorId": "418941954252996609"
     },
     {
-        "identifier": "Disutils Team Lavalink 5",
+        "identifier": "Disutils Team Lavalink 4 (Non-SSL)",
+        "host": "lavalink-4-non-ssl.is-it.pink",
+        "port": 80,
+        "password": "https://disutils.com",
+        "secure": false,
+        "restVersion": "v4",
+        "authorId": "418941954252996609"
+    },
+    {
+        "identifier": "Disutils Team Lavalink 5 (SSL)",
         "host": "lavalink-5.is-it.pink",
         "port": 443,
         "password": "https://disutils.com",
         "secure": true,
+        "restVersion": "v4",
+        "authorId": "418941954252996609"
+    },
+    {
+        "identifier": "Disutils Team Lavalink 5 (Non-SSL)",
+        "host": "lavalink-5-non-ssl.is-it.pink",
+        "port": 80,
+        "password": "https://disutils.com",
+        "secure": false,
         "restVersion": "v4",
         "authorId": "418941954252996609"
     },
