@@ -261,13 +261,6 @@
         "authorId": "824864784271802378"
     },
     {
-        "identifier": "4tunez_studio",
-        "host": "robinz_lavalink.4tunez.xyz",
-        "port": 2333,
-        "password": "youshallnotpass",
-        "secure": false
-    },
-    {
         "identifier": "JM Lite LAVALINK",
         "host": "46.202.82.164",
         "port": 1027,
