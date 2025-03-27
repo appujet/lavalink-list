@@ -18,6 +18,15 @@
         "authorId": "1300534329402982472"
     },
     {
+        "identifier": "Toddy US/UK",
+        "host": "38.22.104.155",
+        "port": 1038,
+        "password": "yothisnodeishostedbymushroom0162",
+        "secure": false,
+        "restVersion": "v4",
+        "authorId": "1053363102017662976"
+    },
+    {
         "identifier": "DivaHost",
         "host": "lavalink.divahost.net",
         "port": 60002,
