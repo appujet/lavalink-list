@@ -6,6 +6,8 @@ on:
       - main
     paths:
       - 'nodes.json'
+permissions:
+  contents: write
 
 jobs:
   remove_duplicates:
@@ -53,6 +55,5 @@ jobs:
           git config --global user.name "GitHub Actions"
           git add .
           git diff-index --quiet HEAD || git commit -m "Update Nodes"
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git main
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          git push https://x-access-token:${{ secrets.GH_PAT }}@github.com/${{ github.repository }}.git main
+        
