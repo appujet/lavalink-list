@@ -1,5 +1,14 @@
 [
     {
+        "identifier": "Musik Hosting",
+        "host": "lavalink-v2.pericsq.ro",
+        "port": 6677,
+        "password": "wwweasycodero",
+        "secure": false,
+        "restVersion": "v4",
+        "authorId": "1104190543120044123"
+    },
+    {
         "identifier": "Public2 Lavalink V2",
         "host": "utopia.pylex.xyz",
         "port": 10167,
