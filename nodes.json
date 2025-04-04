@@ -1,12 +1,12 @@
 [
     {
-        "identifier": "Musik Hosting",
-        "host": "lavalink-v2.pericsq.ro",
-        "port": 6677,
-        "password": "wwweasycodero",
+        "identifier": "funky Music",
+        "host": "54.80.15.46",
+        "port": 25565,
+        "password": "https://dsc.gg/support-funky",
         "secure": false,
         "restVersion": "v4",
-        "authorId": "1104190543120044123"
+        "authorId": "1293144836299558931"
     },
     {
         "identifier": "Public2 Lavalink V2",
