@@ -1,5 +1,14 @@
 [
     {
+        "identifier": "ARINO HQ",
+        "host": "us.sanode.xyz",
+        "port": 25568,
+        "password": "discord.gg/W2GheK3F9m",
+        "secure": false,
+        "restVersion": "v4",
+        "authorId": "1085376019445321829"
+    },
+    {
         "identifier": "Musik Hosting",
         "host": "lavalink-v2.pericsq.ro",
         "port": 6677,
