@@ -45,9 +45,9 @@
     {
         "identifier": "Musik Hosting",
         "host": "lavalink-v2.pericsq.ro",
-        "port": 6677,
+        "port": 443,
         "password": "wwweasycodero",
-        "secure": false,
+        "secure": true,
         "restVersion": "v4",
         "authorId": "1104190543120044123"
     },
