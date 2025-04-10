@@ -3,6 +3,23 @@
 
 "identifier": "ARINO HQ",
 
+"host": "new-york-node-1.vortexcloud.xyz",
+
+"port": 5021,
+
+"password": "discord.gg/W2GheK3F9m",
+
+"secure": false,
+
+"restVersion": "v4",
+
+"authorId": "1085376019445321829"
+
+}, 
+   {
+
+"identifier": "ARINO HQ",
+
 "host": "us.sanode.xyz",
 
 "port": 25568,
@@ -11,7 +28,7 @@
 
 "secure": false,
 
-"restVersion": "v4",
+"restVersion": "v3",
 
 "authorId": "1085376019445321829"
 
