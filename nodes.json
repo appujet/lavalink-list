@@ -322,5 +322,14 @@
         "secure": false,
         "restVersion": "v4",
         "authorId": "619756609337425950"
+    },
+    {
+        "identifier": "Anantix Network: Scarlettx Public Node",
+        "host": "ipv4.digitalocean-sg.anantix.network",
+        "port": 2333,
+        "password": "A-SCARLET-ROSE-AMONG-THORNS-ENVIED-BY-ALL",
+        "secure": false,
+        "restVersion": "v4",
+        "authorId": "1236579719177306173"
     }
 ]
