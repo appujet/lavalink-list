@@ -365,5 +365,13 @@
         "secure": false,
         "restVersion": "v4",
         "authorId": "1236579719177306173"
-    }
+    },{
+        "identifier": "FUGA",
+        "host": "dnode2.astrast.host",
+        "port": 3869,
+        "password": "https://discord.gg/8M2bAHZaQH",
+        "secure": false,
+        "restVersion": "v4",
+        "authorId": "1355098189388189726"
+    },
 ]
