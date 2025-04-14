@@ -1,6 +1,7 @@
 {
   "extends": "@appu/typescript-config/nextjs.json",
   "compilerOptions": {
+    "jsx": "react",
     "plugins": [
       {
         "name": "next"

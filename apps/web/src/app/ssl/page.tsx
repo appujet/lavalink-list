@@ -91,7 +91,7 @@ export default function Ssl() {
                     </div>
                 </div>
                 {/* node list */}
-                {!loading && (
+                {!loading && data && (
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mt-4">
                         {data.map((node) => (
                             <div key={node.host} className="lg:w-4/4 md:w-2/2 w-full" data-aos="fade-up">
