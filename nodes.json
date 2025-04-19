@@ -1,5 +1,14 @@
 [
     {
+        "identifier": "INDIAN LavaLink",
+        "host": "node.lykcloud.org",
+        "port": 1032,
+        "password": "=LYK=",
+        "secure": false,
+        "restVersion": "v4",
+        "authorId": "1186473897240039444"
+    },
+    {
         "identifier": "ARINO HQ",
         "host": "new-york-node-1.vortexcloud.xyz",
         "port": 5021,
