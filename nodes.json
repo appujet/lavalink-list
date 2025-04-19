@@ -358,5 +358,24 @@
         "secure": false,
         "restVersion": "v4",
         "authorId": "1355098189388189726"
+    },
+    {
+        "identifier": "DevXcode",
+        "host": "lavalink.devxcode.in",
+        "port": 80,
+        "password": "DevamOP",
+        "secure": false,
+        "restVersion": "v4",
+        "authorId": "1024319140602847243"
+    },
+
+    {
+        "identifier": "DevXcode",
+        "host": "lavalinkv3.devxcode.in",
+        "port": 80,
+        "password": "DevamOP",
+        "secure": false,
+        "restVersion": "v3",
+        "authorId": "1024319140602847243"
     }
 ]
