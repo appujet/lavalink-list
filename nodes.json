@@ -358,5 +358,23 @@
         "secure": false,
         "restVersion": "v4",
         "authorId": "1355098189388189726"
+    },
+    {
+        "identifier": "Alfari - US",
+        "host": "pool-us.alfari.id",
+        "port": 443,
+        "password": "alfari",
+        "secure": true,
+        "restVersion": "v4",
+        "authorId": "485472723884310539"
+    },
+    {
+        "identifier": "Alfari - SG",
+        "host": "pool-sg.alfari.id",
+        "port": 443,
+        "password": "alfari",
+        "secure": true,
+        "restVersion": "v4",
+        "authorId": "485472723884310539"
     }
 ]
