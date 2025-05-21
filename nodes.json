@@ -358,5 +358,14 @@
         "secure": false,
         "restVersion": "v4",
         "authorId": "1355098189388189726"
+    },
+    {
+        "identifier": "Fedot_Compot",
+        "host": "lavalink.fedotcompot.net",
+        "port": 443,
+        "password": "https://discord.gg/bXXCZzKAyp",
+        "secure": true,
+        "restVersion": "v4",
+        "authorId": "298153303341137922"
     }
 ]
