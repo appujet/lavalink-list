@@ -358,5 +358,14 @@
         "secure": false,
         "restVersion": "v4",
         "authorId": "1355098189388189726"
-    }
+    },
+    {
+        "identifier": "GSI",
+        "host": "dnode-v4-gsi",
+        "port": 2333,
+        "password": "this-is-the-epic-mine",
+        "secure": false,
+        "restVersion": "v4",
+        "authorId": "1236579719177306173"
+    },
 ]
