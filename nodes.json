@@ -358,5 +358,13 @@
         "secure": false,
         "restVersion": "v4",
         "authorId": "1355098189388189726"
-    }
+    },
+    {
+        "identifier": "lost-bot",
+        "host": "207.231.109.91",
+        "port": 23696,
+        "password": "youshallnotpass",
+        "secure": false,
+        "restVersion": "v4",
+        "authorId": "1252001166703853588"
 ]
